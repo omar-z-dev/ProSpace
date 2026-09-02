@@ -1,0 +1,172 @@
+/****/
+@font-face {
+  font-family: "Arimo-normal";
+  src: url("../../fonts/Arimo.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arimo-italic";
+  src: url("../../fonts/Arimo-italic.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+/***********fonts styles classes ************/
+.heading-display {
+  font-family: "Arimo-normal", sans-serif;
+  font-size: 1.875rem;
+}
+
+.heading-secondary {
+  font-family: "Arimo-normal", sans-serif;
+  font-family: 2rem;
+}
+
+.heading-tertiary {
+  font-family: "Arimo-normal", sans-serif;
+  font-size: 0.875rem;
+}
+
+.text-primary {
+  font-family: "Arimo-normal", sans-serif;
+  font-size: 0.813rem;
+}
+
+.text-link-footer {
+  font-family: "Arimo-normal", sans-serif;
+  font-size: 0.688rem;
+}
+
+/*couleur text  and text weight*/
+.text-blk {
+  color: #0f172a;
+}
+
+/*=== Reset ===*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*containers*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-small {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container-xsmall {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/**** Header ***/
+header {
+  position: fixed;
+  top: 0;
+  left: 0; /* important */
+  width: 100%; /* important */
+  background: #0f172a;
+  z-index: 100;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid 1px;
+}
+.header-main .header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.header-main .header-bottom .nav-left ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.header-main .header-bottom .nav-left ul a:hover {
+  transform: scale(1.2);
+}
+.header-main .header-bottom .nav-right ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.header-main .header-bottom .nav-right ul a {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.header-main .header-bottom .nav-right ul a:hover {
+  transform: scale(1.2);
+}
+
+.header-top {
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+  padding: 1rem 0;
+}
+
+/*****************************************/
+.logo {
+  width: 25px;
+  height: 25px;
+  background-color: #0284c7;
+  border-radius: 35%;
+  padding: 2px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-ProSpace {
+  color: white;
+  font-weight: 600;
+}
+
+.logo-Solutions {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .header-nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.navbar .header-nav ul li a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar .header-nav ul li a:hover {
+  color: white;
+}

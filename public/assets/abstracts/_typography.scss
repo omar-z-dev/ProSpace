@@ -1,0 +1,37 @@
+
+/****/
+@font-face {
+  font-family: "Arimo-normal";
+  src: url("../../fonts/Arimo.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arimo-italic";
+  src: url("../../fonts/Arimo-italic.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/***********fonts styles classes ************/
+
+.heading-display {
+     font-family: "Arimo-normal", sans-serif;  
+     font-size: 1.875rem ;
+}
+.heading-secondary {
+     font-family: "Arimo-normal", sans-serif;
+     font-family: 2rem ;
+}
+.heading-tertiary {
+     font-family: "Arimo-normal", sans-serif;
+     font-size: 0.875rem ;
+}
+.text-primary {
+     font-family: "Arimo-normal", sans-serif;
+     font-size: 0.813rem ;
+}
+.text-link-footer {
+     font-family: "Arimo-normal", sans-serif;
+     font-size: 0.688rem ;
+}

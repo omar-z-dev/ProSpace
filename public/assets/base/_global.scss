@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as *;
+
+/*containers*/
+.container{
+    width: $width-primary;
+    margin: 0 auto;
+}
+.container-small{
+    width: $width-primary - 5%;
+    margin: 0 auto;
+}
+.container-xsmall{
+    width: $width-primary - 20%;
+    margin: 0 auto;
+}

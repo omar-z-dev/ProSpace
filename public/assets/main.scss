@@ -1,0 +1,38 @@
+// 1️⃣ Import des variables, fonctions et mixins
+@use "abstracts/variables";
+@use "abstracts/functions";
+@use "abstracts/mixins";
+@use "abstracts/typography";
+@use "abstracts/colors";
+
+
+// 2️⃣ Import des bases
+@use "base/reset";
+@use "base/typo";
+@use "base/global";
+@use "base/base";
+
+// 3️⃣ Import des layouts
+@use "layout/header";
+@use "layout/footer";
+//@use "layout/grid";
+//@use "layout/forms";
+
+// 4️⃣ Import des composants
+@use "components/buttons/primary";
+//@use "components/cards/product-card";
+//@use "components/modals/modal";
+
+// 5️⃣ Import des pages spécifiques
+@use "pages/home";
+@use "pages/about";
+@use "pages/contact";
+
+// 6️⃣ Import des thèmes
+//@use "themes/light";
+//@use "themes/dark";
+
+// 7️⃣ Import des utilitaires
+//@use "utils/animations";
+//@use "utils/spacing";
+//@use "utils/accessibility";
