@@ -42,6 +42,31 @@
   color: #0f172a;
 }
 
+/***********************************/
+.color-primary {
+  color: #0f172a;
+}
+
+.color-secondary {
+  color: #38bdf8;
+}
+
+.color-tertiary {
+  color: #0f172a;
+}
+
+.color-main {
+  color: #62748e;
+}
+
+.color-avis {
+  color: #90a1b9;
+}
+
+.color.main-title {
+  color: #cad5e2;
+}
+
 /*=== Reset ===*/
 * {
   margin: 0;

@@ -4,3 +4,33 @@
 .text-blk {
   color: $primary-color;
 }
+
+/***********************************/
+
+//  1 text blanc
+.color-primary {
+  color: $primary-color;
+}
+//  2 text bleu
+.color-secondary {
+  color: $secondary-color;
+}
+
+//  3 text noir
+.color-tertiary {
+  color: #0f172a;
+}
+
+//  4 text gris pour position salle et apropos
+.color-main {
+  color: #62748e;
+}
+
+//  5 gris clair
+.color-avis {
+  color: #90a1b9;
+}
+//  5 gris clair salle de reunion
+.color.main-title {
+  color: #cad5e2;
+}
