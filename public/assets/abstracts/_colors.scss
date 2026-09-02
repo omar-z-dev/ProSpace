@@ -2,18 +2,18 @@
 
 /*couleur text  and text weight*/
 .text-blk {
-  color: $primary-color;
+  color: $color-bg-hr-ft;
 }
 
 /***********************************/
 
 //  1 text blanc
 .color-primary {
-  color: $primary-color;
+  color: white;
 }
-//  2 text bleu
+//  2 text bleu dans h1 (en france)
 .color-secondary {
-  color: $secondary-color;
+  color: #38bdf8;
 }
 
 //  3 text noir
@@ -21,7 +21,7 @@
   color: #0f172a;
 }
 
-//  4 text gris pour position salle et apropos
+//  4 text gris pour position salle et a propos
 .color-main {
   color: #62748e;
 }
@@ -30,7 +30,7 @@
 .color-avis {
   color: #90a1b9;
 }
-//  5 gris clair salle de reunion
+//  6 gris clair salle de reunion
 .color.main-title {
   color: #cad5e2;
 }
