@@ -46,73 +46,122 @@
       <!-- HERO -->
       <section class="hero">
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
-          <h1 class="hero-label color-secondary text-hero-main">LOCATION B2B EN FRANCE</h1>
+          <div class="container hero-content">
+            <h1 class="hero-label color-secondary text-hero-main">LOCATION B2B EN FRANCE
+            </h1>
 
-          <h2 class="hero-title heading-display">
-            <span class="color-primary">Trouvez votre espace</span>
-            <span class="color-primary">de travail idéal</span>
-            <span class="color-secondary">en France</span>
-          </h2>
-          <p class="color-main-title heading-hero-explain">
-            Salles de réunion, bureaux privatifs et espaces premium<br />
-            disponibles à la demande dans les grandes villes françaises.
-          </p>
-          <div class="hero-avantages">
-            <span>◉ Réservation instantanée</span>
-            <span>◉ Annulation flexible</span>
-            <span>◉ Support dédié</span>
-          </div>
-        </div>
+            <h2 class="hero-title heading-display">
+              <span class="color-primary">Trouvez votre espace</span>
+              <span class="color-primary">de travail idéal</span>
+              <span class="color-secondary">en France</span>
+            </h2>
+            <p class="color-main-title heading-hero-explain">
+              Salles de réunion, bureaux privatifs et espaces premium<br />
+              disponibles à la demande dans les grandes villes françaises.
+            </p>
+
+            <div class="hero-avantages">
+              <span class="heading-tertiary color-avis">◉ Réservation instantanée</span>
+              <span class="heading-tertiary color-avis">◉ Annulation flexible</span>
+              <span class="heading-tertiary color-avis">◉ Support dédié</span>
+            </div>
+          </div>          
       </section>
 
       <!-- FILTRES -->
       <section class="filters">
-        <div class="container filters-content">
-          <span class="filter-title">☷ FILTRER</span>
-          <select>
-            <option>Toutes les villes</option>
+        <div class="container filters-content ">
+          <span class="filter-title color-avis">☷ FILTRER</span>
+          <select class="heading-tertiary-bis color-filter">
+            <option class="heading-tertiary-bis">Toutes les villes</option>
             <option>Paris</option>
             <option>Lyon</option>
             <option>Bordeaux</option>
             <option>Nantes</option>
           </select>
-          <select>
-            <option>Toutes capacités</option>
+          <select class="heading-tertiary-bis color-filter">
+            <option >Toutes capacités</option>
             <option>1 à 5 personnes</option>
             <option>6 à 10 personnes</option>
             <option>11 à 20 personnes</option>
             <option>20+ personnes</option>
           </select>
-          <label><input type="checkbox" /> WiFi Fibre</label>
-          <label><input type="checkbox" /> Accès PMR</label>
-          <label><input type="checkbox" /> Écran 4K</label>
+          <label class="heading-tertiary-bis color-filter" ><input type="checkbox" /> WiFi Fibre</label>
+          <label class="heading-tertiary-bis color-filter"><input type="checkbox" /> Accès PMR</label>
+          <label class="heading-tertiary-bis color-filter"><input type="checkbox" /> Écran 4K</label>
         </div>
       </section>
 
       <!-- ESPACES -->
-      <div class="container">
-        <h2 class="nombre-espaces">6 espaces disponibles</h2>
+      <div class="container cards-list">
+        <h2 class="heading-secondary">6 espaces disponibles</h2>
         <div class="cards">
+
           <!-- CARD 1 -->
           <article class="card">
             <div class="card-image">
-              <img src="img/espace-wagram.jpg" alt="Espace Wagram Opéra" />
-              <button class="favorite active">♥</button>
+              <img src="public/assets/img/cards/chartron1.png" alt="Espace Wagram Opéra" />
+              <button class="favorite active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.84 4.61012C20.3292 4.09912 19.7228 3.69376 19.0554 3.4172C18.3879 3.14064 17.6725 2.99829 16.95 2.99829C16.2275 2.99829 15.5121 3.14064 14.8446 3.4172C14.1772 3.69376 13.5708 4.09912 13.06 4.61012L12 5.67012L10.94 4.61012C9.9083 3.57842 8.50903 2.99883 7.05 2.99883C5.59096 2.99883 4.19169 3.57842 3.16 4.61012C2.1283 5.64181 1.54871 7.04108 1.54871 8.50012C1.54871 9.95915 2.1283 11.3584 3.16 12.3901L4.22 13.4501L12 21.2301L19.78 13.4501L20.84 12.3901C21.351 11.8794 21.7563 11.2729 22.0329 10.6055C22.3095 9.93801 22.4518 9.2226 22.4518 8.50012C22.4518 7.77763 22.3095 7.06222 22.0329 6.39476C21.7563 5.7273 21.351 5.12087 20.84 4.61012Z"/>
+                </svg>
+                            
+              </button>
             </div>
             <div class="card-content">
-              <h3>Espace Wagram Opéra</h3>
-              <p class="location">📍 Paris 8e</p>
-              <div class="rating">⭐⭐⭐⭐⭐ <span>4.8 (34 avis)</span></div>
-              <div class="features">
-                <span>♧ 12 pers.</span>
-                <span>◉ Fibre</span>
-                <span>♿ PMR</span>
-                <span>◧ 4K</span>
+              <h3 class="text-primary">Espace Wagram Opéra</h3>
+
+
+              <div class="location color-main heading-tertiary">
+                <img
+                  src="public/assets/img/cards-icons-position/position.png"
+                  alt="localisation"
+                  class="location-icon">
+                <span>Paris 8e</span>
               </div>
+
+              <div class="rating">⭐⭐⭐⭐⭐ <span class="text-notation">4.8</span> <span class="color-avis">(34 avis)</span></div>
+
+              <div class="features">
+                <!--nombre de personne-->
+                <div class="feature color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/nbre-personne.png"
+                    alt="nombre de personnes"
+                    class="feature-icon">
+                  <span>12 pers.</span>
+                </div>
+                <!--wifi libre-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/internet.png"
+                    alt="wifi libre"
+                    class="feature-icon">
+                  <span>Fibre</span>
+                </div>
+                <!--PMR-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/Icon-3.png"
+                    alt="acces PMR"
+                    class="feature-icon">
+                  <span>PMR</span>
+                </div>
+                <!--ecran 4K-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/ecran-4k.png"
+                    alt="Ecran 4K"
+                    class="feature-icon">
+                  <span>4K</span>
+                </div>
+
+              </div>
+              <!--card footer-->
               <div class="card-footer">
-                <div class="price"><strong>45€</strong><span>/heure</span></div>
-                <a href="#" class="btn">Voir la fiche</a>
+                <div class="price"><span class="color-secondary text-price">45€</span><span class="text-xsmall color-avis">/heure</span></div>
+                <a href="#" class=" heading-tertiary-bis btn-primary">Voir la fiche</a>
               </div>
             </div>
           </article>
@@ -120,21 +169,62 @@
           <!-- CARD 2 -->
           <article class="card">
             <div class="card-image">
-              <img src="img/atelier-republique.jpg" alt="Atelier République" />
-              <button class="favorite">♡</button>
+              <img src="public/assets/img/cards/confluence2.png" alt="Atelier République" />
+              <button class="favorite">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.84 4.61012C20.3292 4.09912 19.7228 3.69376 19.0554 3.4172C18.3879 3.14064 17.6725 2.99829 16.95 2.99829C16.2275 2.99829 15.5121 3.14064 14.8446 3.4172C14.1772 3.69376 13.5708 4.09912 13.06 4.61012L12 5.67012L10.94 4.61012C9.9083 3.57842 8.50903 2.99883 7.05 2.99883C5.59096 2.99883 4.19169 3.57842 3.16 4.61012C2.1283 5.64181 1.54871 7.04108 1.54871 8.50012C1.54871 9.95915 2.1283 11.3584 3.16 12.3901L4.22 13.4501L12 21.2301L19.78 13.4501L20.84 12.3901C21.351 11.8794 21.7563 11.2729 22.0329 10.6055C22.3095 9.93801 22.4518 9.2226 22.4518 8.50012C22.4518 7.77763 22.3095 7.06222 22.0329 6.39476C21.7563 5.7273 21.351 5.12087 20.84 4.61012Z"
+                  />
+                </svg>
+              </button>
             </div>
+
             <div class="card-content">
-              <h3>Atelier République</h3>
-              <p class="location">📍 Paris 11e</p>
-              <div class="rating">⭐⭐⭐⭐⭐ <span>4.6 (51 avis)</span></div>
-              <div class="features">
-                <span>♧ 8 pers.</span>
-                <span>◉ Fibre</span>
-                <span>◧ 4K</span>
+              <h3 class="text-primary">Atelier République</h3>
+
+              <div class="location color-main heading-tertiary">
+                <img
+                  src="public/assets/img/cards-icons-position/position.png"
+                  alt="localisation"
+                  class="location-icon">
+                <span>Paris 11e</span>
               </div>
+
+              <div class="rating">⭐⭐⭐⭐⭐ <span class="text-notation">4.6</span> <span class="color-avis">(51 avis)</span></div>
+
+              <div class="features">
+                <!--nombre de personne-->
+                <div class="feature color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/nbre-personne.png"
+                    alt="nombre de personnes"
+                    class="feature-icon">
+                  <span>8 pers.</span>
+                </div>
+
+                <!--wifi libre-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/internet.png"
+                    alt="wifi libre"
+                    class="feature-icon">
+                  <span>Fibre</span>
+                </div>
+
+                <!--ecran 4K-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/ecran-4k.png"
+                    alt="Ecran 4K"
+                    class="feature-icon">
+                  <span>4K</span>
+                </div>
+              </div>
+
+              <!--card footer-->
               <div class="card-footer">
-                <div class="price"><strong>35€</strong><span>/heure</span></div>
-                <a href="#" class="btn">Voir la fiche</a>
+                <div class="price"><span class="color-secondary text-price">35€</span><span class="text-xsmall color-avis">/heure</span></div>
+                <a href="#" class="heading-tertiary-bis btn-primary">Voir la fiche</a>
               </div>
             </div>
           </article>
@@ -142,22 +232,71 @@
           <!-- CARD 3 -->
           <article class="card">
             <div class="card-image">
-              <img src="img/confluence.jpg" alt="Confluence Executive Suite" />
-              <button class="favorite active">♥</button>
+              <img src="public/assets/img/cards/confluence.png" alt="Confluence Executive Suite" />
+              <button class="favorite active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.84 4.61012C20.3292 4.09912 19.7228 3.69376 19.0554 3.4172C18.3879 3.14064 17.6725 2.99829 16.95 2.99829C16.2275 2.99829 15.5121 3.14064 14.8446 3.4172C14.1772 3.69376 13.5708 4.09912 13.06 4.61012L12 5.67012L10.94 4.61012C9.9083 3.57842 8.50903 2.99883 7.05 2.99883C5.59096 2.99883 4.19169 3.57842 3.16 4.61012C2.1283 5.64181 1.54871 7.04108 1.54871 8.50012C1.54871 9.95915 2.1283 11.3584 3.16 12.3901L4.22 13.4501L12 21.2301L19.78 13.4501L20.84 12.3901C21.351 11.8794 21.7563 11.2729 22.0329 10.6055C22.3095 9.93801 22.4518 9.2226 22.4518 8.50012C22.4518 7.77763 22.3095 7.06222 22.0329 6.39476C21.7563 5.7273 21.351 5.12087 20.84 4.61012Z"
+                  />
+                </svg>
+              </button>
             </div>
+
             <div class="card-content">
-              <h3>Confluence Executive Suite</h3>
-              <p class="location">📍 Lyon 2e</p>
-              <div class="rating">⭐⭐⭐⭐⭐ <span>4.9 (22 avis)</span></div>
-              <div class="features">
-                <span>♧ 20 pers.</span>
-                <span>◉ Fibre</span>
-                <span>♿ PMR</span>
-                <span>◧ 4K</span>
+              <h3 class="text-primary">Confluence Executive Suite</h3>
+
+              <div class="location color-main heading-tertiary">
+                <img
+                  src="public/assets/img/cards-icons-position/position.png"
+                  alt="localisation"
+                  class="location-icon">
+                <span>Lyon 2e</span>
               </div>
+
+              <div class="rating">⭐⭐⭐⭐⭐ <span class="text-notation">4.9</span> <span class="color-avis">(22 avis)</span></div>
+
+              <div class="features">
+                <!--nombre de personne-->
+                <div class="feature color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/nbre-personne.png"
+                    alt="nombre de personnes"
+                    class="feature-icon">
+                  <span>20 pers.</span>
+                </div>
+
+                <!--wifi libre-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/internet.png"
+                    alt="wifi libre"
+                    class="feature-icon">
+                  <span>Fibre</span>
+                </div>
+
+                <!--PMR-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/Icon-3.png"
+                    alt="acces PMR"
+                    class="feature-icon">
+                  <span>PMR</span>
+                </div>
+
+                <!--ecran 4K-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/ecran-4k.png"
+                    alt="Ecran 4K"
+                    class="feature-icon">
+                  <span>4K</span>
+                </div>
+              </div>
+
+              <!--card footer-->
               <div class="card-footer">
-                <div class="price"><strong>55€</strong><span>/heure</span></div>
-                <a href="#" class="btn">Voir la fiche</a>
+                <div class="price"><span class="color-secondary text-price">55€</span><span class="text-xsmall color-avis">/heure</span></div>
+                <a href="#" class="heading-tertiary-bis btn-primary">Voir la fiche</a>
               </div>
             </div>
           </article>
@@ -165,20 +304,53 @@
           <!-- CARD 4 -->
           <article class="card">
             <div class="card-image">
-              <img src="img/chartrons.jpg" alt="Les Chartrons Board Room" />
-              <button class="favorite">♡</button>
+              <img src="public/assets/img/cards/chartron.png" alt="Les Chartrons Board Room" />
+              <button class="favorite">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.84 4.61012C20.3292 4.09912 19.7228 3.69376 19.0554 3.4172C18.3879 3.14064 17.6725 2.99829 16.95 2.99829C16.2275 2.99829 15.5121 3.14064 14.8446 3.4172C14.1772 3.69376 13.5708 4.09912 13.06 4.61012L12 5.67012L10.94 4.61012C9.9083 3.57842 8.50903 2.99883 7.05 2.99883C5.59096 2.99883 4.19169 3.57842 3.16 4.61012C2.1283 5.64181 1.54871 7.04108 1.54871 8.50012C1.54871 9.95915 2.1283 11.3584 3.16 12.3901L4.22 13.4501L12 21.2301L19.78 13.4501L20.84 12.3901C21.351 11.8794 21.7563 11.2729 22.0329 10.6055C22.3095 9.93801 22.4518 9.2226 22.4518 8.50012C22.4518 7.77763 22.3095 7.06222 22.0329 6.39476C21.7563 5.7273 21.351 5.12087 20.84 4.61012Z"
+                  />
+                </svg>
+              </button>
             </div>
+
             <div class="card-content">
-              <h3>Les Chartrons Board Room</h3>
-              <p class="location">📍 Bordeaux</p>
-              <div class="rating">⭐⭐⭐⭐⭐ <span>4.7 (18 avis)</span></div>
-              <div class="features">
-                <span>♧ 16 pers.</span>
-                <span>♿ PMR</span>
+              <h3 class="text-primary">Les Chartrons Board Room</h3>
+
+              <div class="location color-main heading-tertiary">
+                <img
+                  src="public/assets/img/cards-icons-position/position.png"
+                  alt="localisation"
+                  class="location-icon">
+                <span>Bordeaux</span>
               </div>
+
+              <div class="rating">⭐⭐⭐⭐⭐ <span class="text-notation">4.7</span> <span class="color-avis">(18 avis)</span></div>
+
+              <div class="features">
+                <!--nombre de personne-->
+                <div class="feature color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/nbre-personne.png"
+                    alt="nombre de personnes"
+                    class="feature-icon">
+                  <span>16 pers.</span>
+                </div>
+
+                <!--PMR-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/Icon-3.png"
+                    alt="acces PMR"
+                    class="feature-icon">
+                  <span>PMR</span>
+                </div>
+              </div>
+
+              <!--card footer-->
               <div class="card-footer">
-                <div class="price"><strong>40€</strong><span>/heure</span></div>
-                <a href="#" class="btn">Voir la fiche</a>
+                <div class="price"><span class="color-secondary text-price">40€</span><span class="text-xsmall color-avis">/heure</span></div>
+                <a href="#" class="heading-tertiary-bis btn-primary">Voir la fiche</a>
               </div>
             </div>
           </article>
@@ -186,21 +358,62 @@
           <!-- CARD 5 -->
           <article class="card">
             <div class="card-image">
-              <img src="img/nantes-studio.jpg" alt="Île de Nantes Studio" />
-              <button class="favorite">♡</button>
+              <img src="public/assets/img/cards/chartron3.png" alt="Île de Nantes Studio" />
+              <button class="favorite">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.84 4.61012C20.3292 4.09912 19.7228 3.69376 19.0554 3.4172C18.3879 3.14064 17.6725 2.99829 16.95 2.99829C16.2275 2.99829 15.5121 3.14064 14.8446 3.4172C14.1772 3.69376 13.5708 4.09912 13.06 4.61012L12 5.67012L10.94 4.61012C9.9083 3.57842 8.50903 2.99883 7.05 2.99883C5.59096 2.99883 4.19169 3.57842 3.16 4.61012C2.1283 5.64181 1.54871 7.04108 1.54871 8.50012C1.54871 9.95915 2.1283 11.3584 3.16 12.3901L4.22 13.4501L12 21.2301L19.78 13.4501L20.84 12.3901C21.351 11.8794 21.7563 11.2729 22.0329 10.6055C22.3095 9.93801 22.4518 9.2226 22.4518 8.50012C22.4518 7.77763 22.3095 7.06222 22.0329 6.39476C21.7563 5.7273 21.351 5.12087 20.84 4.61012Z"
+                  />
+                </svg>
+              </button>
             </div>
+
             <div class="card-content">
-              <h3>Île de Nantes Studio</h3>
-              <p class="location">📍 Nantes</p>
-              <div class="rating">⭐⭐⭐⭐⭐ <span>4.5 (63 avis)</span></div>
-              <div class="features">
-                <span>♧ 6 pers.</span>
-                <span>◉ Fibre</span>
-                <span>◧ 4K</span>
+              <h3 class="text-primary">Île de Nantes Studio</h3>
+
+              <div class="location color-main heading-tertiary">
+                <img
+                  src="public/assets/img/cards-icons-position/position.png"
+                  alt="localisation"
+                  class="location-icon">
+                <span>Nantes</span>
               </div>
+
+              <div class="rating">⭐⭐⭐⭐⭐ <span class="text-notation">4.5</span> <span class="color-avis">(63 avis)</span></div>
+
+              <div class="features">
+                <!--nombre de personne-->
+                <div class="feature color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/nbre-personne.png"
+                    alt="nombre de personnes"
+                    class="feature-icon">
+                  <span>6 pers.</span>
+                </div>
+
+                <!--wifi libre-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/internet.png"
+                    alt="wifi libre"
+                    class="feature-icon">
+                  <span>Fibre</span>
+                </div>
+
+                <!--ecran 4K-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/ecran-4k.png"
+                    alt="Ecran 4K"
+                    class="feature-icon">
+                  <span>4K</span>
+                </div>
+              </div>
+
+              <!--card footer-->
               <div class="card-footer">
-                <div class="price"><strong>28€</strong><span>/heure</span></div>
-                <a href="#" class="btn">Voir la fiche</a>
+                <div class="price"><span class="color-secondary text-price">28€</span><span class="text-xsmall color-avis">/heure</span></div>
+                <a href="#" class="heading-tertiary-bis btn-primary">Voir la fiche</a>
               </div>
             </div>
           </article>
@@ -208,21 +421,62 @@
           <!-- CARD 6 -->
           <article class="card">
             <div class="card-image">
-              <img src="img/vieux-port.jpg" alt="Vieux-Port Panorama" />
-              <button class="favorite">♡</button>
+              <img src="public/assets/img/cards/chartron3.png" alt="Vieux-Port Panorama" />
+              <button class="favorite">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.84 4.61012C20.3292 4.09912 19.7228 3.69376 19.0554 3.4172C18.3879 3.14064 17.6725 2.99829 16.95 2.99829C16.2275 2.99829 15.5121 3.14064 14.8446 3.4172C14.1772 3.69376 13.5708 4.09912 13.06 4.61012L12 5.67012L10.94 4.61012C9.9083 3.57842 8.50903 2.99883 7.05 2.99883C5.59096 2.99883 4.19169 3.57842 3.16 4.61012C2.1283 5.64181 1.54871 7.04108 1.54871 8.50012C1.54871 9.95915 2.1283 11.3584 3.16 12.3901L4.22 13.4501L12 21.2301L19.78 13.4501L20.84 12.3901C21.351 11.8794 21.7563 11.2729 22.0329 10.6055C22.3095 9.93801 22.4518 9.2226 22.4518 8.50012C22.4518 7.77763 22.3095 7.06222 22.0329 6.39476C21.7563 5.7273 21.351 5.12087 20.84 4.61012Z"
+                  />
+                </svg>
+              </button>
             </div>
+
             <div class="card-content">
-              <h3>Vieux-Port Panorama</h3>
-              <p class="location">📍 Marseille</p>
-              <div class="rating">⭐⭐⭐⭐⭐ <span>4.4 (29 avis)</span></div>
-              <div class="features">
-                <span>♧ 14 pers.</span>
-                <span>◉ Fibre</span>
-                <span>♿ PMR</span>
+              <h3 class="text-primary">Vieux-Port Panorama</h3>
+
+              <div class="location color-main heading-tertiary">
+                <img
+                  src="public/assets/img/cards-icons-position/position.png"
+                  alt="localisation"
+                  class="location-icon">
+                <span>Marseille</span>
               </div>
+
+              <div class="rating">⭐⭐⭐⭐⭐ <span class="text-notation">4.4</span> <span class="color-avis">(29 avis)</span></div>
+
+              <div class="features">
+                <!--nombre de personne-->
+                <div class="feature color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/nbre-personne.png"
+                    alt="nombre de personnes"
+                    class="feature-icon">
+                  <span>14 pers.</span>
+                </div>
+
+                <!--wifi libre-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/internet.png"
+                    alt="wifi libre"
+                    class="feature-icon">
+                  <span>Fibre</span>
+                </div>
+
+                <!--PMR-->
+                <div class="feature feature-badge color-main heading-tertiary">
+                  <img
+                    src="public/assets/img/cards-icons-position/Icon-3.png"
+                    alt="acces PMR"
+                    class="feature-icon">
+                  <span>PMR</span>
+                </div>
+              </div>
+
+              <!--card footer-->
               <div class="card-footer">
-                <div class="price"><strong>38€</strong><span>/heure</span></div>
-                <a href="#" class="btn">Voir la fiche</a>
+                <div class="price"><span class="color-secondary text-price">38€</span><span class="text-xsmall color-avis">/heure</span></div>
+                <a href="#" class="heading-tertiary-bis btn-primary">Voir la fiche</a>
               </div>
             </div>
           </article>
@@ -231,11 +485,21 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="text-blk ">
       <div class="container footer-content">
         <div class="footer-about">
-          <h3>🏢 ProSpace Solutions</h3>
-          <p>
+          <!-- Logo -->
+          <div class="logo-container">
+            <a class="logo-link heading-secondary-logo-ft" href="index.html"
+              ><img
+                class="logo"
+                src="public/assets/img/logo.png"
+                alt="logo"
+              /><span class="color-primary">ProSpace</span>
+              <span class="color-secondary">Solutions</span>
+            </a>
+          </div>
+          <p class="color-main">
             Location d'espaces professionnels<br />
             en France pour les entreprises et<br />
             indépendants exigeants.
@@ -245,38 +509,37 @@
 
         <div>
           <h4>DESTINATIONS</h4>
-          <a href="#">Espaces à Paris</a>
-          <a href="#">Espaces à Lyon</a>
-          <a href="#">Espaces à Bordeaux</a>
-          <a href="#">Espaces à Nantes</a>
-          <a href="#">Espaces à Marseille</a>
-          <a href="#">Espaces à Toulouse</a>
-          <a href="#">Espaces à Lille</a>
+          <a class="color-avis" href="index.html">Espaces à Paris</a>
+          <a class="color-avis" href="index.html">Espaces à Lyon</a>
+          <a class="color-avis" href="index.html">Espaces à Bordeaux</a>
+          <a class="color-avis" href="index.html">Espaces à Nantes</a>
+          <a class="color-avis" href="index.html">Espaces à Marseille</a>
+          <a class="color-avis" href="index.html">Espaces à Toulouse</a>
+          <a class="color-avis" href="index.html">Espaces à Lille</a>
         </div>
 
         <div>
           <h4>SERVICES</h4>
-          <a href="#">Salles de réunion</a>
-          <a href="#">Espaces de coworking</a>
-          <a href="#">Salles de formation</a>
-          <a href="#">Bureaux privatifs</a>
-          <a href="#">Studios visio</a>
-          <a href="#">Espaces événementiels</a>
+          <a class="color-avis" href="index.html">Salles de réunion</a>
+          <a class="color-avis" href="index.html">Espaces de coworking</a>
+          <a class="color-avis" href="index.html">Salles de formation</a>
+          <a class="color-avis" href="index.html">Bureaux privatifs</a>
+          <a class="color-avis" href="index.html">Studios visio</a>
+          <a class="color-avis" href="index.html">Espaces événementiels</a>
         </div>
 
         <div>
           <h4>LÉGAL & ACCÈS</h4>
-          <a href="#">Mentions légales</a>
-          <a href="#">CGU & CGV</a>
-          <a href="#">Politique de confidentialité</a>
-          <a href="#">Gestion des cookies</a>
-          <a href="#">Déclaration d'accessibilité</a>
+          <a class="color-avis" href="index.html">Mentions légales</a>
+          <a class="color-avis" href="index.html">CGU & CGV</a>
+          <a class="color-avis" href="index.html">Politique de confidentialité</a>
+          <a class="color-avis" href="index.html">Gestion des cookies</a>
+          <a class="color-avis" href="index.html">Déclaration d'accessibilité</a>
         </div>
-      </div>
 
       <div class="container footer-bottom">
-        <span>© 2025 ProSpace Solutions SAS — Tous droits réservés</span>
-        <span>Conforme RGAA 4.1 · Accessibilité · Mentions légales</span>
+        <span class="color-filter">© 2025 ProSpace Solutions SAS — Tous droits réservés</span>
+        <span class="color-filter">Conforme RGAA 4.1 · Accessibilité · Mentions légales</span>
       </div>
     </footer>
   </body>

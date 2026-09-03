@@ -1,14 +1,15 @@
+/******************* SECTION HERO ********************/
 .hero {
   position: relative;
-  min-height: 500px;
+  min-height: 550px;
   background-image: url("../assets/img/banner-hero.png");
   background-size: cover;
   background-position: center;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.85);
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.85);
+  }
 }
 
 .hero-content {
@@ -16,19 +17,137 @@
   z-index: 1;
   top: 5rem;
   margin-top: 2rem;
+  .hero-label {
+    border: solid 1px rgb(113, 134, 175);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: rgb(33, 40, 59);
+    margin-bottom: 1rem;
+  }
+  .hero-title {
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    .hero-title span {
+      display: block;
+    }
+  }
+  .hero-avantages {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
 }
-.hero-title {
-  margin-bottom: 1.5rem;
-  margin-top: 3rem;
-  .hero-title span {
+
+/*******************  SECTION FILTERS   ********************/
+.filters {
+  border-bottom: solid 1px #dce1e7;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  .filters-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 1.5rem 0;
+  }
+}
+/********************  SECTION CARDS   **************************/
+
+.cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 0;
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    .card-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+      .card-footer {
+        display: flex;
+        margin-top: auto;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.card-image {
+  position: relative;
+  img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    width: 1rem;
+    height: 1rem;
     display: block;
   }
 }
-.hero-label {
-  border: solid 1px rgb(113, 134, 175);
+
+.favorite path {
+  fill: none;
+  stroke: rgb(121, 117, 117);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.2s ease;
+}
+.favorite:hover path {
+  stroke: red;
+}
+/***ICONE nombre de personne ****/
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  &-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+.features {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.feature-badge {
   padding: 0.5rem 1rem;
-  border-radius: 20px;
-  display: inline-block;
-  background-color: rgb(33, 40, 59);
-  margin-bottom: 1rem;
+  background-color: #f1f5f9;
+  border-radius: 999px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &-icon {
+    width: 1rem;
+    height: 1rem;
+  }
 }

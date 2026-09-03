@@ -62,6 +62,12 @@
   font-weight: 700; //bold
 }
 
+.heading-secondary-logo-ft {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem; //14px in logo header bold
+  font-weight: 700; //bold
+}
+
 .heading-hero-explain {
   font-family: "Inter", sans-serif;
   font-size: 1.125rem; //18px
@@ -70,14 +76,38 @@
 
 .heading-tertiary {
   font-family: "Inter", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-size: 0.875rem; //14px
+  font-weight: 400; //regular
 }
+.heading-tertiary-bis {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem; //14px
+  font-weight: 500; //medium
+}
+
 .text-primary {
   font-family: "Inter", sans-serif;
-  font-size: 0.813rem;
+  font-size: 0.9375rem; //15px
+  font-weight: 600; //semibold
+}
+
+.text-notation {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem; //12px
+  font-weight: 600; //semibold
 }
 .text-hero-main {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
+}
+.text-xsmall {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem; //12PX
+  font-weight: 400; //regular
+}
+
+.text-price {
+  font-family: "Consolas", sans-serif;
+  font-size: 0.1.25rem; //20px
+  font-weight: 700; //bold
 }
