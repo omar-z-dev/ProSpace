@@ -329,7 +329,40 @@ footer {
   padding: 1.5rem 0;
 }
 
-/********************  SECTION CARDS   **************************/
+.filter-select select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #9ea5ad;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+.filter-select select:focus {
+  border-color: #6bb6e8;
+  box-shadow: 0 0 0 2px #6bb6e8;
+}
+
+.filters-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.filters-content label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.filters-content label input[type=checkbox] {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #24779e;
+  cursor: pointer;
+}
+
+/********************  SECTION CARDS   *************************/
 .cards-list {
   display: flex;
   flex-direction: column;
