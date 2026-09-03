@@ -28,9 +28,11 @@ header {
   justify-content: space-between;
   padding: 1rem 0;
   .header-nav {
+    display: flex;
+    align-items: center;
     ul {
       display: flex;
-      flex-direction: row;
+      align-items: center;
       gap: 2rem;
       li {
         a {
@@ -58,6 +60,6 @@ header {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: rgb(137, 164, 218);
+  background-color: #0284c7;
   color: white;
 }

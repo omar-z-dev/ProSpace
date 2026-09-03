@@ -1,4 +1,15 @@
-// Récupérer les favoris depuis localStorage
+/*=============================================================
+            FAVORIS              
+
+Role : 
+
+--Enregistrer les favoris de l'utilisateur dans le localStorage et mettre à jour le compteur Mes espces
+
+--Modifier le css de l'icone de favoris
+
+================================================================*/
+
+// Récupérer les favoris depuis localStorage ou créer un tableau vide
 let favoris = JSON.parse(localStorage.getItem("favoris")) || [];
 
 // Récupérer tous les boutons cœur
@@ -6,7 +17,7 @@ const favoriteButtons = document.querySelectorAll(".favorite");
 
 // Récupérer le compteur
 const favoriteCount = document.getElementById("favorite-count");
-console.log("Boutons trouvés :", favoriteButtons.length);
+console.log("Nombre de Boutons coeurs existants :", favoriteButtons.length);
 console.log("Favoris :", favoris);
 
 // Mettre à jour le nombre de favoris
