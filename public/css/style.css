@@ -433,7 +433,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: rgb(215, 213, 213);
 }
 .favorite svg {
   width: 1rem;

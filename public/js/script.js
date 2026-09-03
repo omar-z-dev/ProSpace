@@ -24,6 +24,11 @@ console.log("Favoris :", favoris);
 function updateFavoriteCount() {
   if (favoriteCount) {
     favoriteCount.textContent = favoris.length;
+    if (favoris.length === 0) {
+      favoriteCount.style.visibility = "hidden";
+    } else {
+      favoriteCount.style.visibility = "visible";
+    }
   }
 }
 
@@ -31,7 +36,7 @@ function updateFavoriteCount() {
 favoriteButtons.forEach((button) => {
   const id = button.dataset.id;
 
-  // Si déjà dans les favoris
+  // Si déjà dans les favoris les coeur restent rouges meme apres refresh de la page
   if (favoris.includes(id)) {
     button.classList.add("active");
   }
