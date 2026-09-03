@@ -1,12 +1,9 @@
 @use "variables" as *;
 
-/*couleur text  and text weight*/
+/*couleur text */
 .text-blk {
   color: $color-bg-hr-ft;
 }
-
-/***********************************/
-
 //  1 text blanc
 .color-primary {
   color: white;
@@ -31,6 +28,6 @@
   color: #90a1b9;
 }
 //  6 gris clair salle de reunion
-.color.main-title {
+.color-main-title {
   color: #cad5e2;
 }

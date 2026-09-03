@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 425px;
+  min-height: 500px;
   background-image: url("../assets/img/banner-hero.png");
   background-size: cover;
   background-position: center;
@@ -14,19 +14,21 @@
 .hero-content {
   position: relative;
   z-index: 1;
+  top: 5rem;
   margin-top: 2rem;
 }
 .hero-title {
-  color: white;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 3.5rem;
   margin-bottom: 1.5rem;
   margin-top: 3rem;
+  .hero-title span {
+    display: block;
+  }
 }
 .hero-label {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding-top: 4rem;
+  border: solid 1px rgb(113, 134, 175);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: inline-block;
+  background-color: rgb(33, 40, 59);
+  margin-bottom: 1rem;
 }

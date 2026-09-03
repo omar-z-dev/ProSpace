@@ -1,37 +1,83 @@
-
 /****/
 @font-face {
-  font-family: "Arimo-normal";
-  src: url("../../fonts/Arimo.ttf") format("truetype");
-  font-weight: 100 900;
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "Arimo-italic";
-  src: url("../../fonts/Arimo-italic.ttf") format("truetype");
-  font-weight: 100 900;
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../fonts/Inter-Italic.ttf") format("truetype");
+  font-weight: 400;
   font-style: italic;
+}
+
+@font-face {
+  font-family: "Consolas";
+  src: url("../../fonts/Consolas-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Consolas";
+  src: url("../../fonts/Consolas-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Consola Mono";
+  src: url("../fonts/ConsolaMono-Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Consola Mono";
+  src: url("../fonts/ConsolaMono-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 /***********fonts styles classes ************/
 
 .heading-display {
-     font-family: "Arimo-normal", sans-serif;  
-     font-size: 1.875rem ;
+  font-family: "Inter", sans-serif;
+  font-size: 3.75rem;
+  font-weight: 800;
 }
+
 .heading-secondary {
-     font-family: "Arimo-normal", sans-serif;
-     font-family: 2rem ;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem; //18px in logo header bold
+  font-weight: 700; //bold
 }
+
+.heading-hero-explain {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem; //18px
+  font-weight: 400; //regular
+}
+
 .heading-tertiary {
-     font-family: "Arimo-normal", sans-serif;
-     font-size: 0.875rem ;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 .text-primary {
-     font-family: "Arimo-normal", sans-serif;
-     font-size: 0.813rem ;
+  font-family: "Inter", sans-serif;
+  font-size: 0.813rem;
 }
-.text-link-footer {
-     font-family: "Arimo-normal", sans-serif;
-     font-size: 0.688rem ;
+.text-hero-main {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
 }
