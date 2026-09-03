@@ -40,6 +40,7 @@
 }
 
 /*******************  SECTION FILTERS   ********************/
+
 .filters {
   border-bottom: solid 1px #dce1e7;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
@@ -124,6 +125,8 @@
   }
 }
 
+/********************* FAVORIS (coeur en background rouge *******************/
+
 .favorite {
   position: absolute;
   top: 10px;
@@ -166,25 +169,26 @@
   }
 }
 
-/***ICONE nombre de personne ****/
-.feature {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  &-icon {
-    width: 1rem;
-    height: 1rem;
-  }
-}
+/***************** ICONE nbre de personne fibre PMR ecran ***************/
+
 .features {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-}
-.feature-badge {
-  padding: 0.5rem 1rem;
-  background-color: #f1f5f9;
-  border-radius: 999px;
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    &-icon {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  .feature-badge {
+    padding: 0.5rem 1rem;
+    background-color: #f1f5f9;
+    border-radius: 999px;
+  }
 }
 
 .location {

@@ -422,6 +422,7 @@ footer {
   border-radius: 1rem 1rem 0 0;
 }
 
+/********************* FAVORIS (coeur en background rouge *******************/
 .favorite {
   position: absolute;
   top: 10px;
@@ -459,24 +460,22 @@ footer {
   stroke: white;
 }
 
-/***ICONE nombre de personne ****/
-.feature {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.feature-icon {
-  width: 1rem;
-  height: 1rem;
-}
-
+/***************** ICONE nbre de personne fibre PMR ecran ***************/
 .features {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
-
-.feature-badge {
+.features .feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.features .feature-icon {
+  width: 1rem;
+  height: 1rem;
+}
+.features .feature-badge {
   padding: 0.5rem 1rem;
   background-color: #f1f5f9;
   border-radius: 999px;
