@@ -2,3 +2,36 @@
 footer {
   background-color: $color-bg-hr-ft;
 }
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem 0;
+  gap: 4rem;
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    .destinations,
+    .services,
+    .legal {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .footer-about {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    border-top: 1px solid rgb(48, 47, 57);
+    padding-top: 2rem;
+  }
+}
