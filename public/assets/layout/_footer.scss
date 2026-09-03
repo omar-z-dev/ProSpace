@@ -19,6 +19,13 @@ footer {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      a {
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #0284c7;
+        }
+      }
     }
     .footer-about {
       display: flex;
