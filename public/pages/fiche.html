@@ -9,47 +9,48 @@
     />
     <title>Espace Wagram Opéra | ProSpace Solutions</title>
 
-    <link rel="stylesheet" href="public/assets/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <div class="container header-content">
-        <!-- LOGO -->
+    <header>
+      <div class="container navbar">
+        <!-- Logo -->
         <div class="logo-container">
-          <a
-            class="logo-link"
-            href="index.html"
-            aria-label="Retour à l'accueil ProSpace Solutions"
-          >
-            <img
+          <a class="logo-link heading-secondary" href="index.html"
+            ><img
               class="logo"
-              src="public/assets/img/logo.png"
-              alt="Logo ProSpace Solutions"
-            />
-            <span class="color-primary">ProSpace</span>
+              src="../assets/img/logo.png"
+              alt="logo ProSpace Solutions"
+            /><span class="color-primary">ProSpace</span>
             <span class="color-secondary">Solutions</span>
           </a>
         </div>
 
-        <!-- NAVIGATION -->
-        <nav class="navigation" aria-label="Navigation principale">
-          <ul>
-            <li>
-              <a class="color-main-title" href="index.html">Accueil</a>
-            </li>
-            <li>
-              <a class="counter color-main-title" href="mes-espaces.html">
-                Mes Espaces
-                <span class="badge" id="favorite-count">0</span>
-              </a>
-            </li>
-            <li>
-              <a class="color-main-title" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
+        <!-- Navigation -->
+        <div class="header-menu">
+          <nav class="header-nav heading-tertiary">
+            <ul class="nav-links">
+              <!--lien accueil-->
+              <li>
+                <a href="../../index.html" class="color-main-title">Accueil</a>
+              </li>
+
+              <!--lien mes espaces-->
+              <li>
+                <a class="counter color-main-title" href="mes-espaces.html"
+                  >Mes Espaces<span class="badge" id="favorite-count"> 0</span>
+                </a>
+              </li>
+
+              <!--lien contact-->
+              <li>
+                <a class="color-main-title" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -67,7 +68,7 @@
 
         <!-- TITRE -->
         <section class="fiche-header">
-          <h1 class="text-primary">Espace Wagram Opéra</h1>
+          <h1 class="heading-display-fiche">Espace Wagram Opéra</h1>
 
           <div class="fiche-info">
             <div class="location color-main heading-tertiary">
@@ -82,7 +83,9 @@
             <div class="rating">
               <span>⭐⭐⭐⭐⭐</span>
               <strong class="text-notation">4.8</strong>
-              <span class="color-avis">· 34 avis vérifiés</span>
+              <span class="heading-tertiary color-avis"
+                >· 34 avis vérifiés</span
+              >
             </div>
           </div>
         </section>
@@ -91,18 +94,18 @@
         <section class="fiche-gallery" aria-label="Photos de l'espace">
           <div class="gallery-main">
             <img
-              src="public/assets/img/cards/chartron1.png"
+              src="../assets/img/cards/chartron.png"
               alt="Espace Wagram Opéra"
             />
           </div>
 
           <div class="gallery-side">
             <img
-              src="public/assets/img/cards/confluence2.png"
+              src="../assets/img/cards/chartron.png"
               alt="Salle de réunion Espace Wagram Opéra"
             />
             <img
-              src="public/assets/img/cards/chartron3.png"
+              src="../assets/img/cards/chartron.png"
               alt="Espace professionnel"
             />
           </div>
@@ -114,9 +117,9 @@
           <div class="fiche-details">
             <!-- A PROPOS -->
             <section class="fiche-section">
-              <h2 class="text-primary">À propos de cet espace</h2>
+              <h2 class="heading-secondary">À propos de cet espace</h2>
 
-              <p class="color-main">
+              <p class="heading-tertiary color-main">
                 Au cœur du 8e arrondissement, à deux pas de l'Arc de Triomphe,
                 l'Espace Wagram Opéra offre un cadre premium pour vos réunions
                 stratégiques et présentations clients. La salle est équipée d'un
@@ -129,49 +132,18 @@
 
             <!-- EQUIPEMENTS -->
             <section class="fiche-section">
-              <h2 class="text-primary">Équipements inclus</h2>
+              <h2 class="heading-secondary">Équipements inclus</h2>
 
-              <div class="equipments">
-                <div class="equipment">
-                  <span>◉</span>
-                  <span>WiFi Fibre 1 Gb/s</span>
-                </div>
-
-                <div class="equipment">
-                  <span>▣</span>
-                  <span>Écran 4K 86"</span>
-                </div>
-
-                <div class="equipment">
-                  <span>◉</span>
-                  <span>Visioconférence intégrée</span>
-                </div>
-
-                <div class="equipment">
-                  <span>▣</span>
-                  <span>Tableau blanc interactif</span>
-                </div>
-
-                <div class="equipment">
-                  <span>♿</span>
-                  <span>Accès PMR complet</span>
-                </div>
-
-                <div class="equipment">
-                  <span>◉</span>
-                  <span>Climatisation réversible</span>
-                </div>
-
-                <div class="equipment">
-                  <span>☕</span>
-                  <span>Café & eau inclus</span>
-                </div>
-
-                <div class="equipment">
-                  <span>◉</span>
-                  <span>Parking sécurisé -1</span>
-                </div>
-              </div>
+              <ul class="equipments heading-tertiary">
+                <li class="equipment">WiFi Fibre 1 Gb/s</li>
+                <li class="equipment">Écran 4K 86"</li>
+                <li class="equipment">Visioconférence intégrée</li>
+                <li class="equipment">Tableau blanc interactif</li>
+                <li class="equipment">Accès PMR complet</li>
+                <li class="equipment">Climatisation réversible</li>
+                <li class="equipment">Café & eau inclus</li>
+                <li class="equipment">Parking sécurisé -1</li>
+              </ul>
             </section>
 
             <!-- CAPACITE -->
@@ -182,9 +154,11 @@
                 <span>♧</span>
 
                 <div>
-                  <p>Jusqu'à <strong>12 personnes</strong></p>
+                  <p class="heading-tertiary">
+                    Jusqu'à <strong>12 personnes</strong>
+                  </p>
 
-                  <span class="color-avis">
+                  <span class="heading-tertiary color-avis">
                     Configuration modulable : théâtre, classe, U, boardroom —
                     sur demande.
                   </span>
@@ -193,36 +167,44 @@
             </section>
           </div>
 
-          <!-- PARTIE DROITE -->
+          <!-- Tarifs -->
           <aside class="pricing-card">
             <h2 class="text-primary">Tarifs</h2>
 
             <div class="pricing-list">
               <div class="pricing-item">
-                <span class="color-main">◷ À l'heure</span>
-                <strong>45€</strong>
+                <span class="heading-tertiary color-main"> À l'heure</span>45€
               </div>
 
               <div class="pricing-item">
-                <span class="color-main">◷ Demi-journée (4h)</span>
-                <strong>160€</strong>
+                <span class="heading-tertiary color-main">
+                  Demi-journée (4h)</span
+                >160€
               </div>
 
               <div class="pricing-item">
-                <span class="color-main">◷ Journée complète</span>
-                <strong class="color-secondary">280€</strong>
+                <span class="text-primary"> Journée complète</span>
+                <strong class="text-price color-secondary">280€</strong>
               </div>
             </div>
 
-            <button class="favorite-btn" type="button">
-              ♥ Sauvegardé en Favoris
+            <!-- sauvegarde en favoris -->
+            <button
+              class="heading-secondary-logo-ft favorite-btn"
+              type="button"
+            >
+              Sauvegardé en Favoris
             </button>
 
-            <a href="contact.html" class="btn-primary contact-btn">
+            <!-- contacter l'equipe -->
+            <a
+              href="contact.html"
+              class="heading-secondary-logo-ft btn-primary contact-btn"
+            >
               Contacter l'équipe
             </a>
 
-            <p class="response-info color-avis">
+            <p class="text-xsmall response-info color-avis">
               Réponse garantie sous 2h ouvrées · Sans engagement
             </p>
           </aside>
