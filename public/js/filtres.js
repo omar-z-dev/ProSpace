@@ -1,73 +1,4 @@
 /*=============================================================
-            FAVORIS              
-
-Role : 
-
---Enregistrer les favoris de l'utilisateur dans le localStorage et mettre à jour le compteur Mes espces
-
---Modifier le css de l'icone de favoris
-
-================================================================*/
-
-// Récupérer les favoris depuis localStorage ou créer un tableau vide
-let favoris = JSON.parse(localStorage.getItem("favoris")) || [];
-
-// Récupérer tous les boutons cœur
-const favoriteButtons = document.querySelectorAll(".favorite");
-
-// Récupérer le compteur
-const favoriteCount = document.getElementById("favorite-count");
-console.log("Nombre de Boutons coeurs existants :", favoriteButtons.length);
-console.log("Favoris :", favoris);
-
-// Mettre à jour le nombre de favoris
-function updateFavoriteCount() {
-  if (favoriteCount) {
-    favoriteCount.textContent = favoris.length;
-    if (favoris.length === 0) {
-      favoriteCount.style.visibility = "hidden";
-    } else {
-      favoriteCount.style.visibility = "visible";
-    }
-  }
-}
-
-// Vérifier les favoris au chargement
-favoriteButtons.forEach((button) => {
-  const id = button.dataset.id;
-
-  // Si déjà dans les favoris les coeur restent rouges meme apres refresh de la page
-  if (favoris.includes(id)) {
-    button.classList.add("active");
-  }
-
-  // Au clic sur le cœur
-  button.addEventListener("click", () => {
-    console.log("CLICK DETECTÉ :", id);
-    // Ajouter ou enlever la classe active
-    button.classList.toggle("active");
-
-    // Vérifier si le favori existe déjà
-    if (favoris.includes(id)) {
-      // Supprimer le favori
-      favoris = favoris.filter((favoriteId) => favoriteId !== id);
-    } else {
-      // Ajouter le favori
-      favoris.push(id);
-    }
-
-    // Enregistrer dans localStorage
-    localStorage.setItem("favoris", JSON.stringify(favoris));
-
-    // Mettre à jour le compteur
-    updateFavoriteCount();
-  });
-});
-
-// Afficher le nombre au chargement
-updateFavoriteCount();
-
-/*=============================================================
             FILTRES              
 Role : 
 
@@ -91,19 +22,22 @@ function filtrerEspaces() {
   const capacite = filterCapacite.value;
   const fibre = filterFibre.checked;
   const pmr = filterPMR.checked;
-  console.log(pmr);
+  console.log("case PMR :", pmr);
   const ecran4K = filter4K.checked;
 
+  // Parcourir tous les cards
   cards.forEach((card) => {
     console.log("test");
     // Récupérer les valeurs des cards
     const cardVille = card.dataset.ville;
     const cardCapacite = Number(card.dataset.capacite);
+    console.log("cardCapacite", cardCapacite);
     const cardFibre = card.dataset.fibre === "true";
     const cardPMR = card.dataset.pmr === "true";
     //crocher pour echapper le nombre 4 sinon ca marche pas dans la condition
     const card4K = card.dataset["4k"] === "true";
 
+    // Initialiser la variable d'affichage
     let afficher = true;
 
     // Filtre ville : si la ville n'est pas "all" et si la ville de la card n'est pas celle choisie, on cache la card
@@ -141,7 +75,7 @@ function filtrerEspaces() {
       afficher = false;
     }
 
-    // Afficher ou cacher
+    // Afficher ou cacher un
     if (afficher) {
       card.style.display = "";
     } else {
@@ -149,12 +83,10 @@ function filtrerEspaces() {
     }
   });
 }
+
+// Ajouter des listeners aux filtres et appeler la fonction de filtrage a la detection d'un changement, (fonction sans parrenthese car pas besoin de l'executer au chargement de la page)
 filterVille.addEventListener("change", filtrerEspaces);
-
 filterCapacite.addEventListener("change", filtrerEspaces);
-
 filterFibre.addEventListener("change", filtrerEspaces);
-
 filterPMR.addEventListener("change", filtrerEspaces);
-
 filter4K.addEventListener("change", filtrerEspaces);

@@ -5,7 +5,6 @@
 @use "abstracts/typography";
 @use "abstracts/colors";
 
-
 // 2️⃣ Import des bases
 @use "base/reset";
 @use "base/typo";
@@ -25,7 +24,7 @@
 
 // 5️⃣ Import des pages spécifiques
 @use "pages/home";
-@use "pages/about";
+@use "pages/fiche";
 @use "pages/contact";
 
 // 6️⃣ Import des thèmes
