@@ -122,17 +122,30 @@
         </div>
       </section>
 
-      <!-- ESPACES -->
+      <!---------------------------------------------------
+                         LISTE DES CARDS
+      ---------------------------------------------------->
+
       <div class="container cards-list">
         <h2 class="heading-secondary">6 espaces disponibles</h2>
         <div class="cards">
           <!-- CARD 1 -->
-          <article class="card">
+          <article
+            class="card"
+            data-ville="paris"
+            data-capacite="12"
+            data-fibre="true"
+            data-pmr="true"
+            data-4k="true"
+          >
+            <!--card image (heut de la card)-->
             <div class="card-image">
+              <!--image de la card-->
               <img
                 src="public/assets/img/cards/chartron1.png"
                 alt="Espace Wagram Opéra"
               />
+              <!--bouton ajouter aux favoris-->
               <button
                 class="favorite"
                 data-id="1"
@@ -151,6 +164,8 @@
                 </svg>
               </button>
             </div>
+
+            <!--card content (bas de la card)-->
             <div class="card-content">
               <h3 class="text-primary">Espace Wagram Opéra</h3>
 
@@ -220,10 +235,17 @@
           </article>
 
           <!-- CARD 2 -->
-          <article class="card">
+          <article
+            class="card"
+            data-ville="paris"
+            data-capacite="8"
+            data-fibre="true"
+            data-pmr="false"
+            data-4k="true"
+          >
             <div class="card-image">
               <img
-                src="public/assets/img/cards/confluence2.png"
+                src="public/assets/img/cards/atelier-republique.png"
                 alt="Atelier République"
               />
               <button class="favorite" data-id="2">
@@ -304,10 +326,17 @@
           </article>
 
           <!-- CARD 3 -->
-          <article class="card">
+          <article
+            class="card"
+            data-ville="lyon"
+            data-capacite="20"
+            data-fibre="true"
+            data-pmr="true"
+            data-4k="true"
+          >
             <div class="card-image">
               <img
-                src="public/assets/img/cards/confluence.png"
+                src="public/assets/img/cards/confluence-executive-suite.png"
                 alt="Confluence Executive Suite"
               />
               <button class="favorite" data-id="3">
@@ -366,7 +395,7 @@
                 <!--PMR-->
                 <div class="feature feature-badge color-main heading-tertiary">
                   <img
-                    src="public/assets/img/cards-icons-position/Icon-3.png"
+                    src="public/assets/img/cards-icons-position/pmr.png"
                     alt="acces PMR"
                     class="feature-icon"
                   />
@@ -398,7 +427,14 @@
           </article>
 
           <!-- CARD 4 -->
-          <article class="card">
+          <article
+            class="card"
+            data-ville="bordeaux"
+            data-capacite="16"
+            data-fibre="false"
+            data-pmr="true"
+            data-4k="false"
+          >
             <div class="card-image">
               <img
                 src="public/assets/img/cards/chartron.png"
@@ -472,10 +508,17 @@
           </article>
 
           <!-- CARD 5 -->
-          <article class="card">
+          <article
+            class="card"
+            data-ville="nantes"
+            data-capacite="6"
+            data-fibre="true"
+            data-pmr="false"
+            data-4k="true"
+          >
             <div class="card-image">
               <img
-                src="public/assets/img/cards/chartron3.png"
+                src="public/assets/img/cards/espace-vieux-port.png"
                 alt="Île de Nantes Studio"
               />
               <button class="favorite" data-id="5">
@@ -556,10 +599,17 @@
           </article>
 
           <!-- CARD 6 -->
-          <article class="card">
+          <article
+            class="card"
+            data-ville="marseille"
+            data-capacite="14"
+            data-fibre="true"
+            data-pmr="true"
+            data-4k="false"
+          >
             <div class="card-image">
               <img
-                src="public/assets/img/cards/chartron3.png"
+                src="public/assets/img/cards/espace-vieux-port.png"
                 alt="Vieux-Port Panorama"
               />
               <button class="favorite" data-id="6">
@@ -642,12 +692,15 @@
       </div>
     </main>
 
-    <!-- FOOTER -->
+    <!---------------------------------------------------
+                          FOOTER 
+     ---------------------------------------------------->
+
     <footer class="text-blk">
       <div class="footer-main">
         <div class="container footer-top">
           <div class="footer-about">
-            <!-- Logo -->
+            <!-- Logo contact-->
             <div class="logo-container">
               <a class="logo-link heading-secondary-logo-ft" href="index.html"
                 ><img
@@ -667,7 +720,7 @@
               >✉ Nous contacter</a
             >
           </div>
-
+          <!-- destinations-->
           <div class="destinations">
             <h4 class="text-notation color-primary">DESTINATIONS</h4>
             <a class="text-xsmall color-avis" href="index.html"
@@ -692,7 +745,7 @@
               >Espaces à Lille</a
             >
           </div>
-
+          <!-- services-->
           <div class="services">
             <h4 class="text-notation color-primary">SERVICES</h4>
             <a class="text-xsmall color-avis" href="index.html"
@@ -714,7 +767,7 @@
               >Espaces événementiels</a
             >
           </div>
-
+          <!-- legal et acces-->
           <div class="legal">
             <h4 class="text-notation color-primary">LÉGAL & ACCÈS</h4>
             <a class="text-xsmall color-avis" href="index.html"
@@ -732,7 +785,7 @@
             >
           </div>
         </div>
-
+        <!-- Bas de page mention legales-->
         <div class="container footer-bottom">
           <span class="color-filter"
             >© 2025 ProSpace Solutions SAS — Tous droits réservés</span
@@ -743,6 +796,7 @@
         </div>
       </div>
     </footer>
+    <!--script js-->
     <script src="public/js/script.js"></script>
   </body>
 </html>

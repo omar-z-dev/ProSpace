@@ -447,7 +447,6 @@ footer {
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
-  transition: 0.2s ease;
 }
 .favorite:hover path {
   stroke: red;

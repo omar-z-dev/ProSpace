@@ -152,13 +152,12 @@
     stroke-width: 2;
     stroke-linecap: round;
     stroke-linejoin: round;
-    transition: 0.2s ease;
   }
 
   &:hover path {
     stroke: red;
   }
-
+  //classe active pour le coeur ajouté avec js
   &.active {
     background: red;
 
