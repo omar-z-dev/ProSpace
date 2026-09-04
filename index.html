@@ -84,40 +84,47 @@
         <div class="container filters-content">
           <span class="filter-title color-avis">☷ FILTRER</span>
           <div class="filter-select">
+            <!-- FILTRER PAR VILLE -->
             <select
               class="heading-tertiary-bis color-filter"
               aria-label="Filtrer par ville"
+              id="filter-ville"
             >
-              <option class="heading-tertiary-bis">Toutes les villes</option>
-              <option>Paris</option>
-              <option>Lyon</option>
-              <option>Bordeaux</option>
-              <option>Nantes</option>
+              <option class="heading-tertiary-bis" value="all">
+                Toutes les villes
+              </option>
+              <option value="paris">Paris</option>
+              <option value="lyon">Lyon</option>
+              <option value="bordeaux">Bordeaux</option>
+              <option value="nantes">Nantes</option>
+              <option value="marseille">Marseille</option>
             </select>
           </div>
           <div class="filter-select">
+            <!-- FILTRER PAR CAPACITE -->
             <select
               class="heading-tertiary-bis color-filter"
               aria-label="Filtrer par capacité"
+              id="filter-capacite"
             >
-              <option>Toutes capacités</option>
-              <option>1 à 5 personnes</option>
-              <option>6 à 10 personnes</option>
-              <option>11 à 20 personnes</option>
-              <option>20+ personnes</option>
+              <option value="all">Toutes capacités</option>
+              <option value="1-5">1 à 5 personnes</option>
+              <option value="6-10">6 à 10 personnes</option>
+              <option value="11-20">11 à 20 personnes</option>
+              <option value="20+">20+ personnes</option>
             </select>
           </div>
-          <!-- CHECKBOXES -->
+          <!-- WiFi Fibre -->
           <label class="heading-tertiary-bis color-filter"
-            ><input type="checkbox" /> WiFi Fibre</label
+            ><input type="checkbox" id="filter-fibre" /> WiFi Fibre</label
           >
-
+          <!-- Accès PMR -->
           <label class="heading-tertiary-bis color-filter"
-            ><input type="checkbox" /> Accès PMR</label
+            ><input type="checkbox" id="filter-pmr" /> Accès PMR</label
           >
-
+          <!--Écran 4K -->
           <label class="heading-tertiary-bis color-filter"
-            ><input type="checkbox" /> Écran 4K</label
+            ><input type="checkbox" id="filter-4k" /> Écran 4K</label
           >
         </div>
       </section>
