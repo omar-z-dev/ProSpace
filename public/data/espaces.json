@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "nom": "Espace Wagram Opéra",
+    "ville": "Paris",
+    "adresse": "14 Avenue de Wagram, 75008 Paris",
+    "note": 4.8,
+    "nombreAvis": 34,
+    "description": "Au cœur du 8e arrondissement, à deux pas de l'Arc de Triomphe, l'Espace Wagram Opéra offre un cadre premium pour vos réunions stratégiques et présentations clients. La salle est équipée d'un mobilier haut de gamme, d'une acoustique soignée et d'une lumière naturelle généreuse grâce à ses larges baies vitrées. Idéal pour les comités de direction, les sessions de négociation et les workshops en petit groupe.",
+
+    "capacite": 12,
+
+    "equipements": [
+      "WiFi Fibre 1 Gb/s",
+      "Écran 4K 86 pouces",
+      "Visioconférence intégrée",
+      "Tableau blanc interactif",
+      "Accès PMR complet",
+      "Climatisation réversible",
+      "Café & eau inclus",
+      "Parking sécurisé -1"
+    ],
+
+    "images": [
+      "../assets/img/cards/atelier-republique.png",
+      "../assets/img/cards/atelier-republique.png",
+      "../assets/img/cards/atelier-republique.png"
+    ],
+
+    "tarifs": {
+      "heure": 45,
+      "demiJournee": 160,
+      "journee": 280
+    }
+  }
+]

@@ -68,7 +68,9 @@
 
         <!-- TITRE -->
         <section class="fiche-header">
-          <h1 class="heading-display-fiche">Espace Wagram Opéra</h1>
+          <h1 id="espace-nom" class="heading-display-fiche">
+            Espace Wagram Opéra
+          </h1>
 
           <div class="fiche-info">
             <div class="location color-main heading-tertiary">
@@ -77,35 +79,38 @@
                 alt=""
                 class="location-icon"
               />
-              <span>14 Avenue de Wagram, 75008 Paris</span>
+              <span id="espace-adresse">14 Avenue de Wagram, 75008 Paris</span>
             </div>
 
             <div class="rating">
               <span>⭐⭐⭐⭐⭐</span>
-              <strong class="text-notation">4.8</strong>
-              <span class="heading-tertiary color-avis"
+              <strong id="espace-note" class="text-notation">4.8</strong>
+              <span id="espace-avis" class="heading-tertiary color-avis"
                 >· 34 avis vérifiés</span
               >
             </div>
           </div>
         </section>
 
-        <!-- GALERIE -->
+        <!-- GALERIE IMAGES -->
         <section class="fiche-gallery" aria-label="Photos de l'espace">
           <div class="gallery-main">
             <img
-              src="../assets/img/cards/chartron.png"
+              id="image-principale"
+              src="../assets/img/cards/atelier-republique.png"
               alt="Espace Wagram Opéra"
             />
           </div>
 
           <div class="gallery-side">
             <img
-              src="../assets/img/cards/chartron.png"
+              id="image-secondaire-1"
+              src="../assets/img/cards/atelier-republique.png"
               alt="Salle de réunion Espace Wagram Opéra"
             />
             <img
-              src="../assets/img/cards/chartron.png"
+              id="image-secondaire-2"
+              src="../assets/img/cards/atelier-republique.png"
               alt="Espace professionnel"
             />
           </div>
@@ -119,7 +124,7 @@
             <section class="fiche-section">
               <h2 class="heading-secondary">À propos de cet espace</h2>
 
-              <p class="heading-tertiary color-main">
+              <p id="espace-description" class="heading-tertiary color-main">
                 Au cœur du 8e arrondissement, à deux pas de l'Arc de Triomphe,
                 l'Espace Wagram Opéra offre un cadre premium pour vos réunions
                 stratégiques et présentations clients. La salle est équipée d'un
@@ -151,11 +156,9 @@
               <h2 class="text-primary">Capacité & Configuration</h2>
 
               <div class="capacity-info">
-                <span>♧</span>
-
                 <div>
                   <p class="heading-tertiary">
-                    Jusqu'à <strong>12 personnes</strong>
+                    Jusqu'à <strong id="espace-capacite">12 personnes</strong>
                   </p>
 
                   <span class="heading-tertiary color-avis">
@@ -173,26 +176,28 @@
             <div class="pricing-list">
               <div class="pricing-item">
                 <span class="heading-tertiary color-main">À l'heure</span>
-                <strong class="text-price">45€</strong>
+                <strong id="prix-heure" class="text-price">45€</strong>
               </div>
 
               <div class="pricing-item">
                 <span class="heading-tertiary color-main"
                   >Demi-journée (4h)</span
                 >
-                <strong class="text-price">160€</strong>
+                <strong id="prix-demi-journee" class="text-price">160€</strong>
               </div>
 
               <div class="pricing-item">
                 <span class="text-primary"> Journée complète</span>
-                <strong class="text-price color-secondary">280€</strong>
+                <strong id="prix-journee" class="text-price color-secondary"
+                  >280€</strong
+                >
               </div>
             </div>
 
             <!-- SAUVEGARDE EN FAVORIS -->
             <button
               class="heading-secondary-logo-ft favorite-btn"
-              data-id="1"
+              id="favorite-button"
               type="button"
               aria-label="Ajouter aux favoris"
             >
@@ -333,7 +338,6 @@
       </div>
     </footer>
     <!--script js-->
-    <script src="public/js/favoris.js"></script>
-    <script src="public/js/filtres.js"></script>
+    <script src="../js/voir-fiche.js"></script>
   </body>
 </html>
