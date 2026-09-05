@@ -3,11 +3,11 @@
 
 Role : 
 
---Récupérer l'id de l'article
+--afficher l espace au clic sur voir fiche
 
 
 ================================================================*/
-
+//chargement du html fiche.html au chargement de la page
 // recuperer l'id en recuperant ce qu'il y a apres ? dans l'URL
 const params = new URLSearchParams(window.location.search);
 
@@ -20,10 +20,12 @@ async function chargerEspace() {
   // Recuperer les espaces dans le dossier data
   const response = await fetch("../data/espaces.json");
 
+  //attendre la reponse et recuperer les espaces en json
   const espaces = await response.json();
 
   console.log("Tous les espaces :", espaces);
 
+  // Trouver l'espace correspondant à l'ID récupéré
   const espace = espaces.find((espace) => espace.id == id);
 
   console.log("Espace trouvé :", espace);
@@ -81,6 +83,50 @@ async function chargerEspace() {
 
   document.getElementById("prix-journee").textContent =
     `${espace.tarifs.journee}€`;
+
+  /*=============================================================
+    
+FAVORIS              
+
+Role : 
+
+--Enregistrer les favoris de l'utilisateur dans le localStorage et mettre à jour le css de l'icone de favoris
+
+================================================================*/
+  // Récupérer les favoris depuis localStorage
+  let favoris = JSON.parse(localStorage.getItem("favoris")) || [];
+
+  // Récupérer le bouton
+  const favoriteButton = document.getElementById("favorite-button");
+
+  // Vérifier si l'espace est déjà dans les favoris
+  const dejaFavori = favoris.some((favori) => favori.id === espace.id);
+
+  // Si déjà en favori
+  if (dejaFavori) {
+    favoriteButton.textContent = "Retirer de mes espaces";
+  }
+
+  // Clic sur le bouton
+  favoriteButton.addEventListener("click", () => {
+    // Vérifier si l'espace est déjà dans les favoris
+    const dejaFavori = favoris.some((favori) => favori.id === espace.id);
+
+    if (dejaFavori) {
+      // Supprimer l'espace
+      favoris = favoris.filter((favori) => favori.id !== espace.id);
+
+      favoriteButton.textContent = "Sauvegarder dans mes espaces";
+    } else {
+      // Ajouter l'espace complet
+      favoris.push(espace);
+
+      favoriteButton.textContent = "Retirer de mes espaces";
+    }
+
+    // Enregistrer dans localStorage
+    localStorage.setItem("favoris", JSON.stringify(favoris));
+  });
 }
 
 chargerEspace();
