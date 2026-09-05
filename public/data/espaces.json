@@ -22,15 +22,120 @@
     ],
 
     "images": [
-      "../assets/img/cards/atelier-republique.png",
-      "../assets/img/cards/atelier-republique.png",
-      "../assets/img/cards/atelier-republique.png"
+      "../assets/img/cards/espace-wagram-opera.png",
+      "../assets/img/cards/espace-wagram-opera.png",
+      "../assets/img/cards/espace-wagram-opera.png"
     ],
 
     "tarifs": {
       "heure": 47,
       "demiJournee": 160,
       "journee": 280
+    }
+  },
+  {
+    "id": 2,
+    "nom": "Atelier République",
+    "ville": "Paris",
+    "adresse": "Paris 11e",
+    "note": 4.6,
+    "nombreAvis": 51,
+    "description": "Situé dans le 11e arrondissement de Paris, l'Atelier République propose un espace professionnel moderne et fonctionnel, idéal pour les réunions, ateliers collaboratifs et sessions de travail.",
+    "capacite": 8,
+    "equipements": ["WiFi Fibre", "Écran 4K"],
+    "images": [
+      "../assets/img/cards/atelier-republique.png",
+      "../assets/img/cards/atelier-republique.png",
+      "../assets/img/cards/atelier-republique.png"
+    ],
+    "tarifs": {
+      "heure": 35,
+      "demiJournee": 120,
+      "journee": 220
+    }
+  },
+  {
+    "id": 3,
+    "nom": "Confluence Executive Suite",
+    "ville": "Lyon",
+    "adresse": "Lyon 2e",
+    "note": 4.9,
+    "nombreAvis": 22,
+    "description": "La Confluence Executive Suite offre un environnement professionnel haut de gamme au cœur de Lyon, parfaitement adapté aux réunions stratégiques, présentations et événements professionnels.",
+    "capacite": 20,
+    "equipements": ["WiFi Fibre", "Accès PMR", "Écran 4K"],
+    "images": [
+      "../assets/img/cards/confluence-executive-suite.png",
+      "../assets/img/cards/confluence-executive-suite.png",
+      "../assets/img/cards/confluence-executive-suite.png"
+    ],
+    "tarifs": {
+      "heure": 55,
+      "demiJournee": 190,
+      "journee": 350
+    }
+  },
+  {
+    "id": 4,
+    "nom": "Les Chartrons Board Room",
+    "ville": "Bordeaux",
+    "adresse": "Bordeaux",
+    "note": 4.7,
+    "nombreAvis": 18,
+    "description": "Les Chartrons Board Room est un espace élégant et confortable, idéal pour les réunions professionnelles, les rendez-vous clients et les sessions de travail en équipe.",
+    "capacite": 16,
+    "equipements": ["Accès PMR"],
+    "images": [
+      "../assets/img/cards/les-chartrons-board-room.png",
+      "../assets/img/cards/les-chartrons-board-room.png",
+      "../assets/img/cards/les-chartrons-board-room.png"
+    ],
+    "tarifs": {
+      "heure": 40,
+      "demiJournee": 140,
+      "journee": 250
+    }
+  },
+  {
+    "id": 5,
+    "nom": "Île de Nantes Studio",
+    "ville": "Nantes",
+    "adresse": "Nantes",
+    "note": 4.5,
+    "nombreAvis": 63,
+    "description": "Situé à Nantes, cet espace moderne et lumineux est adapté aux petites équipes, aux réunions de travail et aux sessions de collaboration.",
+    "capacite": 6,
+    "equipements": ["WiFi Fibre", "Écran 4K"],
+    "images": [
+      "../assets/img/cards/espace-vieux-port.png",
+      "../assets/img/cards/espace-vieux-port.png",
+      "../assets/img/cards/espace-vieux-port.png"
+    ],
+    "tarifs": {
+      "heure": 28,
+      "demiJournee": 100,
+      "journee": 180
+    }
+  },
+  {
+    "id": 6,
+    "nom": "Vieux-Port Panorama",
+    "ville": "Marseille",
+    "adresse": "Marseille",
+    "note": 4.4,
+    "nombreAvis": 29,
+    "description": "Vieux-Port Panorama propose un espace professionnel agréable avec une vue privilégiée, idéal pour organiser des réunions, présentations et sessions de travail.",
+    "capacite": 14,
+    "equipements": ["WiFi Fibre", "Accès PMR"],
+    "images": [
+      "../assets/img/cards/espace-vieux-port.png",
+      "../assets/img/cards/espace-vieux-port.png",
+      "../assets/img/cards/espace-vieux-port.png"
+    ],
+    "tarifs": {
+      "heure": 38,
+      "demiJournee": 130,
+      "journee": 230
     }
   }
 ]
