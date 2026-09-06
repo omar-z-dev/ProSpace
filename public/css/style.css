@@ -660,7 +660,7 @@ footer {
   border-bottom: 1px solid #dce1e7;
 }
 .fiche .pricing-card {
-  /* btn ajouter aux favoris*/
+  /*********** btn ajouter aux favoris ****************/
 }
 .fiche .pricing-card .favorite-btn {
   display: flex;
@@ -690,8 +690,17 @@ footer {
   color: #0284c7;
   background-color: #f0f9ff;
 }
+.fiche .pricing-card .favorite-btn.active {
+  border-color: #fb7185;
+  background-color: #fff1f2;
+  color: #e11d48;
+}
+.fiche .pricing-card .favorite-btn.active svg path {
+  fill: #e11d48;
+  stroke: #ff637e;
+}
 .fiche .pricing-card {
-  /* btn contacter */
+  /********************* btn contacter *********************/
 }
 .fiche .pricing-card .contact-btn {
   display: block;

@@ -86,46 +86,67 @@ async function chargerEspace() {
 
   /*=============================================================
     
-FAVORIS              
+
+              SAUVGARDER EN FAVORIS DEPUIS DETAIL FICHE              
 
 Role : 
 
---Enregistrer les favoris de l'utilisateur dans le localStorage et mettre à jour le css de l'icone de favoris
+--Enregistrer les favoris de l'utilisateur dans le localStorage et mettre à jour le css du bouton favoris
 
 ================================================================*/
+  function updateFavoriteCount() {
+    //Role : Mettre à jour le compteur de favoris dans le header
+    const favoriteCount = document.getElementById("favorite-count");
+
+    if (!favoriteCount) return;
+
+    const favoris = JSON.parse(localStorage.getItem("favoris")) || [];
+
+    favoriteCount.textContent = favoris.length;
+
+    if (favoris.length === 0) {
+      favoriteCount.style.visibility = "hidden";
+    } else {
+      favoriteCount.style.visibility = "visible";
+    }
+  }
   // Récupérer les favoris depuis localStorage
   let favoris = JSON.parse(localStorage.getItem("favoris")) || [];
 
   // Récupérer le bouton
   const favoriteButton = document.getElementById("favorite-button");
 
-  // Vérifier si l'espace est déjà dans les favoris
-  const dejaFavori = favoris.some((favori) => favori.id === espace.id);
+  // Mettre à jour l'apparence du bouton
+  function updateFavoriteButton() {
+    //Role : Vérifier si l'espace est déjà dans les favoris et mettre à jour l'apparence du bouton
 
-  // Si déjà en favori
-  if (dejaFavori) {
-    favoriteButton.textContent = "Retirer de mes espaces";
-  }
-
-  // Clic sur le bouton
-  favoriteButton.addEventListener("click", () => {
     // Vérifier si l'espace est déjà dans les favoris
-    const dejaFavori = favoris.some((favori) => favori.id === espace.id);
+    const dejaFavori = favoris.includes(String(espace.id));
 
     if (dejaFavori) {
-      // Supprimer l'espace
-      favoris = favoris.filter((favori) => favori.id !== espace.id);
-
-      favoriteButton.textContent = "Sauvegarder dans mes espaces";
+      favoriteButton.classList.add("active");
     } else {
-      // Ajouter l'espace complet
-      favoris.push(espace);
+      favoriteButton.classList.remove("active");
+    }
+  }
 
-      favoriteButton.textContent = "Retirer de mes espaces";
+  // Vérifier au chargement
+  updateFavoriteButton();
+  updateFavoriteCount();
+
+  favoriteButton.addEventListener("click", () => {
+    const id = String(espace.id);
+
+    if (favoris.includes(id)) {
+      favoris = favoris.filter((favoriteId) => favoriteId !== id);
+    } else {
+      favoris.push(id);
     }
 
-    // Enregistrer dans localStorage
     localStorage.setItem("favoris", JSON.stringify(favoris));
+
+    updateFavoriteButton();
+    updateFavoriteCount();
   });
 }
 

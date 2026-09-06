@@ -9,7 +9,6 @@
 
     a {
       text-decoration: none;
-
       &:hover {
         color: #0470f4;
       }
@@ -19,11 +18,9 @@
   /*************************** TITRE ******************************/
   .fiche-header {
     margin-bottom: 1.5rem;
-
     h1 {
       margin-bottom: 1rem;
     }
-
     .fiche-info {
       display: flex;
       align-items: center;
@@ -54,7 +51,6 @@
     grid-template-columns: 2fr 1fr;
     gap: 0.75rem;
     margin-bottom: 2rem;
-
     overflow: hidden;
     border-radius: 1rem;
     img {
@@ -164,7 +160,7 @@
       padding-bottom: 1rem;
       border-bottom: 1px solid #dce1e7;
     }
-    /* btn ajouter aux favoris*/
+    /*********** btn ajouter aux favoris ****************/
 
     .favorite-btn {
       display: flex;
@@ -197,8 +193,21 @@
         color: #0284c7;
         background-color: #f0f9ff;
       }
+      //ajout e la classe active pour le bouton favoris
+      &.active {
+        border-color: #fb7185;
+        background-color: #fff1f2;
+        color: #e11d48;
+
+        svg path {
+          fill: #e11d48;
+          stroke: #ff637e;
+        }
+      }
     }
-    /* btn contacter */
+
+    /********************* btn contacter *********************/
+
     .contact-btn {
       display: block;
       width: 100%;
