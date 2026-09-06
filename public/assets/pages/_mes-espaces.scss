@@ -1,0 +1,75 @@
+.saved-spaces-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.saved-space {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #dce1e7;
+  border-radius: 1rem;
+
+  &-image {
+    width: 200px;
+    height: 140px;
+
+    object-fit: cover;
+    border-radius: 0.75rem;
+
+    flex-shrink: 0;
+  }
+
+  &-content {
+    flex: 1;
+
+    h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  &-location {
+    margin: 0 0 1rem;
+    color: #64748b;
+  }
+
+  &-details {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    font-size: 0.9rem;
+  }
+
+  &-capacity {
+    color: #64748b;
+  }
+
+  &-price {
+    color: #0284c7;
+    font-weight: bold;
+
+    small {
+      color: #64748b;
+      font-weight: normal;
+    }
+  }
+
+  &-rating {
+    color: #f59e0b;
+
+    small {
+      color: #64748b;
+    }
+  }
+
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+}
