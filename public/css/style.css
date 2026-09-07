@@ -374,7 +374,7 @@ footer {
 .hero .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.85);
+  background: linear-gradient(to right, #0f172a 0%, rgba(15, 23, 42, 0.7490196078) 50%, rgba(15, 23, 42, 0.3019607843) 100%);
 }
 
 .hero-content {
@@ -403,9 +403,18 @@ footer {
   gap: 1rem;
   margin-top: 2rem;
 }
+.hero-content .hero-avantages span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 /*******************  SECTION FILTERS   ********************/
 .filters {
+  position: sticky;
+  top: 80px;
+  z-index: 100;
+  background-color: white;
   border-bottom: solid 1px #dce1e7;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
