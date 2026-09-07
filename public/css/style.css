@@ -243,11 +243,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   background-color: #0284c7;
   color: white;
+  font-size: 12px;
+}
+
+/**** Nav link ***/
+.nav-link {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  color: #cbd5e1;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: white;
+}
+.nav-link.active {
+  background-color: #334155;
+  color: #38bdf8;
 }
 
 footer {
@@ -718,7 +734,7 @@ footer {
   gap: 0.75rem;
   width: 100%;
   padding: 0.9rem 1rem;
-  border: 3px solid #dce1e7;
+  border: 2px solid #dce1e7;
   border-radius: 0.75rem;
   background-color: white;
   cursor: pointer;
@@ -774,6 +790,10 @@ footer {
   margin-bottom: 1rem;
 }
 
+.saved-space-image-container {
+  overflow: hidden;
+}
+
 .saved-spaces-list {
   display: flex;
   flex-direction: column;
@@ -785,16 +805,25 @@ footer {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  padding: 1rem;
   background: white;
   border: 1px solid #dce1e7;
   border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.saved-space:hover .saved-space-image {
+  transform: scale(1.03);
+}
+.saved-space .saved-space-image {
+  transition: transform 0.4s ease;
 }
 .saved-space-image {
   width: 200px;
   height: 140px;
   object-fit: cover;
   border-radius: 0.75rem;
+  border-radius: 1rem 0 0 1rem;
+  transition: transform 0.3s ease;
 }
 .saved-space-content {
   flex: 1;
@@ -813,4 +842,43 @@ footer {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+.saved-space-content {
+  padding: 1rem;
+}
+
+.saved-space-actions {
+  padding: 1rem;
+}
+
+/******************* MESSAGE SI AUCUN ESPACE SAUVEGARDE ***************/
+.empty-selection-message {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.empty-selection-message h2 {
+  margin-bottom: 1rem;
+}
+
+.empty-selection-message p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.empty-selection-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 30%;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
 }

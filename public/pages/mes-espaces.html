@@ -35,7 +35,9 @@
 
               <!--lien mes espaces-->
               <li>
-                <a class="counter color-main-title" href="mes-espaces.html"
+                <a
+                  class="nav-link active counter color-main-title"
+                  href="mes-espaces.html"
                   >Mes Espaces<span class="badge" id="favorite-count"> 0</span>
                 </a>
               </li>
@@ -111,13 +113,48 @@
         </p>
       </div>
 
-      <!---------Liste des espaces ---------->
+      <!---------Liste des espaces -------------------------->
       <section class="saved-spaces-list" id="mes-espaces-list"></section>
 
-      <section id="empty-favorites" hidden>
-        <h2>Aucun espace sauvegardé</h2>
-        <p>Vous n'avez pas encore ajouté d'espace.</p>
-        <a href="../index.html">Découvrir les espaces</a>
+      <!---------message si aucun espace sauvegardé --------->
+      <section class="empty-selection-message" id="empty-favorites" hidden>
+        <div class="empty-selection-icon">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M20.84 4.61C19.87 3.64 18.56 3.1 17.19 3.1C15.82 3.1 14.51 3.64 13.54 4.61L12 6.15L10.46 4.61C8.44 2.59 5.16 2.59 3.14 4.61C1.12 6.63 1.12 9.91 3.14 11.93L12 20.79L20.86 11.93C22.88 9.91 22.88 6.63 20.84 4.61Z"
+              stroke=" #cad5e2"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <h2 class="heading-secondary">Aucun espace sauvegardé</h2>
+        <p class="heading-tertiary color-main" id="selection-text">
+          Ajoutez des espaces à vos favoris depuis le catalogue en cliquant
+          surl'icône
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <path
+              d="M20.84 4.61C19.87 3.64 18.56 3.1 17.19 3.1C15.82 3.1 14.51 3.64 13.54 4.61L12 6.15L10.46 4.61C8.44 2.59 5.16 2.59 3.14 4.61C1.12 6.63 1.12 9.91 3.14 11.93L12 20.79L20.86 11.93C22.88 9.91 22.88 6.63 20.84 4.61Z"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </p>
       </section>
     </main>
 

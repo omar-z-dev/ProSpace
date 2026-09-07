@@ -12,6 +12,8 @@ function updateFavoriteCount() {
 
   // Nombre dans "Mes Espaces Sauvegardés"
   const nombreEspaces = document.getElementById("nombre-espaces");
+  // Texte dans "Mes Espaces Sauvegardés"
+  const selectionText = document.getElementById("selection-text");
 
   // Mettre à jour le badge
   if (favoriteCount) {
@@ -29,6 +31,34 @@ function updateFavoriteCount() {
     nombreEspaces.textContent = favoris.length;
   }
 }
+/*=============================================================
+  VÉRIFIER SI LA SÉLECTION EST VIDE
+
+Role : 
+
+--Afficher le message "Aucun espace favori" si la sélection est vide
+
+================================================================*/
+function updateEmptyState() {
+  const favoris = JSON.parse(localStorage.getItem("favoris")) || [];
+
+  const liste = document.getElementById("mes-espaces-list");
+  const emptyFavorites = document.getElementById("empty-favorites");
+
+  if (favoris.length === 0) {
+    // Masquer la liste
+    liste.style.display = "none";
+
+    // Afficher le message vide
+    emptyFavorites.style.display = "flex";
+  } else {
+    // Afficher la liste
+    liste.style.display = "flex";
+
+    // Masquer le message vide
+    emptyFavorites.style.display = "none";
+  }
+}
 
 /*=============================================================
   MES ESPACES              
@@ -44,6 +74,8 @@ async function afficherMesEspaces() {
 
   // Mettre à jour les compteurs
   updateFavoriteCount();
+  // Vérifier si la sélection est vide
+  updateEmptyState();
 
   // Récupérer la section HTML où ajouter les cards
   const liste = document.getElementById("mes-espaces-list");
@@ -72,11 +104,13 @@ async function afficherMesEspaces() {
 
     // Créer le contenu HTML de la card
     card.innerHTML = `
-      <img
-        class="saved-space-image"
-        src="${espace.images[0]}"
-        alt="${espace.nom}"
-      >
+      <div class="saved-space-image-container">
+        <img
+          class="saved-space-image"
+          src="${espace.images[0]}"
+          alt="${espace.nom}"
+        >
+      </div>
 
       <div class="saved-space-content">
         <h2 class="heading-secondary">${espace.nom}</h2>
@@ -94,7 +128,7 @@ async function afficherMesEspaces() {
           </span>
 
           <span class="text-notation">
-            ★ ${espace.note}
+            ⭐⭐⭐
             <small class="color-main heading-tertiary">(${espace.nombreAvis})</small>
           </span>
         </div>
@@ -157,7 +191,67 @@ async function afficherMesEspaces() {
 
     // Ajouter la card dans la section HTML
     liste.appendChild(card);
+
+    /*=============================================================
+
+                        RETIRER UN ESPACE
+
+      Role : Retirer un espace de la liste des favoris au clic 
+      sur le bouton RETIRER
+
+    =============================================================*/
+
+    // Récupérer le bouton Retirer de cette card
+    const removeButton = card.querySelector(".btn-secondary");
+
+    // Au clic sur Retirer
+    removeButton.addEventListener("click", () => {
+      // Récupérer l'ID de l'espace
+      const id = removeButton.dataset.id;
+
+      // Récupérer les favoris
+      let favoris = JSON.parse(localStorage.getItem("favoris")) || [];
+
+      // Retirer cet espace du tableau
+      favoris = favoris.filter((favori) => favori !== id);
+
+      // Sauvegarder le nouveau tableau dans localStorage
+      localStorage.setItem("favoris", JSON.stringify(favoris));
+
+      // Retirer visuellement la card
+      card.remove();
+
+      // Mettre à jour le badge et le nombre d'espaces
+      updateFavoriteCount();
+    });
   });
 }
 
 afficherMesEspaces();
+
+/*=============================================================
+                    VIDER TOUS LES FAVORIS
+
+Role :
+
+--Retirer tous les espaces favoris au clic sur
+  "Vider ma sélection"
+
+================================================================*/
+
+const clearFavoritesButton = document.getElementById("clear-favorites");
+
+clearFavoritesButton.addEventListener("click", () => {
+  // Supprimer tous les favoris du localStorage
+  localStorage.removeItem("favoris");
+
+  // Retirer toutes les cards visuellement en vidant la section
+  const liste = document.getElementById("mes-espaces-list");
+  liste.innerHTML = "";
+
+  // Mettre à jour le badge et le nombre d'espaces
+  updateFavoriteCount();
+
+  // Vérifier immédiatement si la sélection est vide
+  updateEmptyState();
+});
