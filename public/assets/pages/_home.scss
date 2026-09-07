@@ -63,6 +63,11 @@
     flex-direction: row;
     gap: 2rem;
     padding: 1.5rem 0;
+    .filter-icon {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
   }
 }
 /*css pour le select des codelist*/
