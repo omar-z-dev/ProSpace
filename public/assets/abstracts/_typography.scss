@@ -97,7 +97,7 @@
   font-weight: 400; //regular
 }
 
-/**consolas*/
+/**********************consolas*********************/
 
 .text-price {
   font-family: "Consolas", sans-serif;
@@ -107,5 +107,10 @@
 .text-price-bis {
   font-family: "Consolas", sans-serif;
   font-size: 1.25rem; //20px
+  font-weight: 800; //bold
+}
+.text-price-space {
+  font-family: "Consolas", sans-serif;
+  font-size: 1rem; //16px
   font-weight: 800; //bold
 }

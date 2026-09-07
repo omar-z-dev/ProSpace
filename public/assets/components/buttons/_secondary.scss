@@ -1,0 +1,21 @@
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.2rem;
+  border: solid 1px #e2e8f0;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: #fff1f2;
+    color: #ef4444;
+    border: solid 1px #ef4444;
+  }
+}

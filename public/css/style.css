@@ -95,7 +95,7 @@
   font-weight: 400;
 }
 
-/**consolas*/
+/**********************consolas*********************/
 .text-price {
   font-family: "Consolas", sans-serif;
   font-size: 1.25rem;
@@ -105,6 +105,12 @@
 .text-price-bis {
   font-family: "Consolas", sans-serif;
   font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.text-price-space {
+  font-family: "Consolas", sans-serif;
+  font-size: 1rem;
   font-weight: 800;
 }
 
@@ -139,6 +145,10 @@
 
 .color-filter {
   color: #45556c;
+}
+
+.color-price-space {
+  color: #0284c7;
 }
 
 /*=== Reset ===*/
@@ -307,6 +317,28 @@ footer {
 
 .btn-primary:hover {
   background-color: #12698f;
+}
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.2rem;
+  border: solid 1px #e2e8f0;
+  background-color: transparent;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+.btn-secondary:hover {
+  background-color: #fff1f2;
+  color: #ef4444;
+  border: solid 1px #ef4444;
 }
 
 /******************* SECTION HERO ********************/
@@ -521,7 +553,7 @@ footer {
 }
 
 .fiche {
-  padding: 2rem 0 4rem;
+  padding: 5rem 0;
 }
 .fiche .breadcrumb {
   display: flex;
@@ -732,6 +764,16 @@ footer {
   font-size: 0.75rem;
 }
 
+.spaces {
+  padding: 5rem 0;
+}
+.spaces .saved-spaces-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
 .saved-spaces-list {
   display: flex;
   flex-direction: column;
@@ -753,7 +795,6 @@ footer {
   height: 140px;
   object-fit: cover;
   border-radius: 0.75rem;
-  flex-shrink: 0;
 }
 .saved-space-content {
   flex: 1;
@@ -762,32 +803,11 @@ footer {
   margin: 0 0 0.5rem;
   font-size: 1.2rem;
 }
-.saved-space-location {
-  margin: 0 0 1rem;
-  color: #64748b;
-}
 .saved-space-details {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   font-size: 0.9rem;
-}
-.saved-space-capacity {
-  color: #64748b;
-}
-.saved-space-price {
-  color: #0284c7;
-  font-weight: bold;
-}
-.saved-space-price small {
-  color: #64748b;
-  font-weight: normal;
-}
-.saved-space-rating {
-  color: #f59e0b;
-}
-.saved-space-rating small {
-  color: #64748b;
 }
 .saved-space-actions {
   display: flex;

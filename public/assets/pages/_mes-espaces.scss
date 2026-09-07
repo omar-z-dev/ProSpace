@@ -1,3 +1,13 @@
+.spaces {
+  padding: 5rem 0;
+  .saved-spaces-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+}
+
 .saved-spaces-list {
   display: flex;
   flex-direction: column;
@@ -16,11 +26,8 @@
   &-image {
     width: 200px;
     height: 140px;
-
     object-fit: cover;
     border-radius: 0.75rem;
-
-    flex-shrink: 0;
   }
 
   &-content {
@@ -32,39 +39,11 @@
     }
   }
 
-  &-location {
-    margin: 0 0 1rem;
-    color: #64748b;
-  }
-
   &-details {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-
     font-size: 0.9rem;
-  }
-
-  &-capacity {
-    color: #64748b;
-  }
-
-  &-price {
-    color: #0284c7;
-    font-weight: bold;
-
-    small {
-      color: #64748b;
-      font-weight: normal;
-    }
-  }
-
-  &-rating {
-    color: #f59e0b;
-
-    small {
-      color: #64748b;
-    }
   }
 
   &-actions {
