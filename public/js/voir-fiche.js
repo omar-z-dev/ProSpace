@@ -27,6 +27,11 @@ async function chargerEspace() {
 
   // Trouver l'espace correspondant à l'ID récupéré
   const espace = espaces.find((espace) => espace.id == id);
+  // Fil d'Ariane : ville
+  document.getElementById("breadcrumb-ville").textContent = espace.ville;
+
+  // Fil d'Ariane : nom de l'espace
+  document.getElementById("breadcrumb-espace").textContent = espace.nom;
 
   console.log("Espace trouvé :", espace);
 

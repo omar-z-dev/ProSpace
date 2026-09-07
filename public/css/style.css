@@ -209,7 +209,7 @@ header {
   height: 25px;
   background-color: #0284c7;
   border-radius: 35%;
-  padding: 2px;
+  padding: 0.4rem;
 }
 
 .navbar {
@@ -575,7 +575,7 @@ footer {
 }
 
 .fiche {
-  padding: 5rem 0;
+  padding: 7rem 0;
 }
 .fiche .breadcrumb {
   display: flex;

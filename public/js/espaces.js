@@ -137,7 +137,7 @@ async function afficherMesEspaces() {
         <a
           href="fiche.html?id=${espace.id}"
           class="heading-tertiary-bis  btn-primary"
-        >Voir fiche</a>
+        >Voir la fiche</a>
 
         <button class="heading-tertiary-bis btn-secondary" data-id="${espace.id}">
           <svg
