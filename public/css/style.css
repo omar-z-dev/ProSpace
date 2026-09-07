@@ -190,6 +190,7 @@ li {
 
 /**** Header ***/
 header {
+  height: 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -212,9 +213,11 @@ header {
 }
 
 .navbar {
+  height: 100%;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 0;
 }
 .navbar .header-nav {
   display: flex;
@@ -253,6 +256,8 @@ header {
 
 /**** Nav link ***/
 .nav-link {
+  height: 40px;
+  box-sizing: border-box;
   padding: 0.75rem 1rem;
   border-radius: 0.75rem;
   color: #cbd5e1;
@@ -260,6 +265,7 @@ header {
 }
 .nav-link:hover {
   color: white;
+  background-color: #334155;
 }
 .nav-link.active {
   background-color: #334155;
@@ -781,7 +787,7 @@ footer {
 }
 
 .spaces {
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 .spaces .saved-spaces-header {
   display: flex;
