@@ -24,7 +24,8 @@ function filtrerEspaces() {
   const pmr = filterPMR.checked;
   console.log("case PMR :", pmr);
   const ecran4K = filter4K.checked;
-
+  // Initialiser le compteur du nombre d'espaces disponibles
+  let nombreEspaces = 0;
   // Parcourir tous les cards
   cards.forEach((card) => {
     console.log("test");
@@ -77,11 +78,16 @@ function filtrerEspaces() {
 
     // Afficher ou cacher un
     if (afficher) {
+      //enlever la valeur de dispalay si elle est "none"
       card.style.display = "";
+      // Incrémenter de 1 nombreEspaces
+      nombreEspaces++;
     } else {
       card.style.display = "none";
     }
   });
+  // Mettre à jour le nombre d'espaces affichés
+  document.getElementById("nombre-espaces").textContent = nombreEspaces;
 }
 
 // Ajouter des listeners aux filtres et appeler la fonction de filtrage a la detection d'un changement, (fonction sans parrenthese car pas besoin de l'executer au chargement de la page)
@@ -90,3 +96,4 @@ filterCapacite.addEventListener("change", filtrerEspaces);
 filterFibre.addEventListener("change", filtrerEspaces);
 filterPMR.addEventListener("change", filtrerEspaces);
 filter4K.addEventListener("change", filtrerEspaces);
+filtrerEspaces();

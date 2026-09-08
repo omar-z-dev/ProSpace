@@ -1173,6 +1173,9 @@ footer {
   justify-content: center;
   gap: 0.3rem;
 }
+.google-maps:hover {
+  text-decoration: underline;
+}
 
 /************************************************************
                         RESPONSIVE

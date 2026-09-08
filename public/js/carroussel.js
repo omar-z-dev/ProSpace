@@ -3,7 +3,7 @@
 
 Role : 
 
---Afficher les cards en fonction des filtres
+--Faire fonctionner le carroussel des membres de l'equipe au clic sur les fleches précedent et suivant
 
 ================================================================*/
 

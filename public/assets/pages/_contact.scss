@@ -392,6 +392,9 @@
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 /************************************************************
                         RESPONSIVE
