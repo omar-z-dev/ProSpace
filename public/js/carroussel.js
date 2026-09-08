@@ -80,7 +80,7 @@ prevButton.addEventListener("click", () => {
 
 /*==============================================================
 
-               Mettre à jour le nombre de favoris
+              Mettre à jour le nombre de favoris
 
 ===============================================================*/
 function updateFavoriteCount() {
