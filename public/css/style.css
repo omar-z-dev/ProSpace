@@ -812,7 +812,7 @@ footer {
 .contact-hero {
   padding: 10rem 0;
   text-align: center;
-  background-color: #1e293b;
+  background: radial-gradient(circle at center, rgba(2, 132, 199, 0.1) 0%, rgba(2, 132, 199, 0) 50%), #1e293b;
 }
 .contact-hero .contact-label {
   display: inline-flex;
@@ -822,7 +822,6 @@ footer {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   background-color: rgba(14, 165, 233, 0.15);
-  color: #38bdf8;
 }
 .contact-hero .contact-label svg {
   width: 15px;
@@ -832,10 +831,6 @@ footer {
 .contact-hero h1 {
   margin-bottom: 0.75rem;
   color: white;
-}
-.contact-hero p {
-  line-height: 1.6;
-  color: #94a3b8;
 }
 
 /************************************************************
@@ -873,9 +868,6 @@ footer {
 .contact-form-header h2 {
   margin: 0;
 }
-.contact-form-header span {
-  color: #94a3b8;
-}
 
 .form-row {
   display: grid;
@@ -890,7 +882,6 @@ footer {
 }
 .form-group label {
   margin-bottom: 0.4rem;
-  color: #475569;
 }
 .form-group input,
 .form-group select,
@@ -919,7 +910,6 @@ footer {
   align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-  color: #64748b;
 }
 .checkbox-group input {
   margin-top: 0.2rem;
@@ -947,8 +937,8 @@ footer {
 .contact-info-card {
   padding: 1.5rem;
   border-radius: 0.75rem;
-  background-color: #1e293b;
   color: white;
+  background-color: #0f172a;
 }
 .contact-info-card > h2 {
   margin: 0 0 0.3rem;
@@ -956,7 +946,6 @@ footer {
 .contact-info-card > span {
   display: block;
   margin-bottom: 1.5rem;
-  color: #38bdf8;
 }
 
 .contact-info-item {
@@ -997,25 +986,19 @@ footer {
   border-radius: 0.75rem;
   background-color: white;
 }
-.response-card strong {
-  color: #334155;
-}
 .response-card p {
   margin: 0.3rem 0 0;
-  line-height: 1.5;
-  color: #64748b;
 }
 
 .response-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #e0f2fe;
-  color: #0284c7;
 }
 
 /************************************************************
@@ -1029,15 +1012,12 @@ footer {
 }
 .contact-rating .stars {
   margin-bottom: 0.75rem;
-  color: #f59e0b;
 }
 .contact-rating .stars span {
   margin-left: 0.3rem;
-  color: #334155;
 }
 .contact-rating p {
   margin-bottom: 0.75rem;
-  color: #64748b;
 }
 
 /************************************************************
@@ -1054,10 +1034,6 @@ footer {
 .team-section > .container > p {
   max-width: 600px;
   margin: 0 auto 3rem;
-}
-
-.team-label {
-  color: #0284c7;
 }
 
 /************************************************************
@@ -1083,10 +1059,6 @@ footer {
 }
 .team-member h3 {
   margin: 0 0 0.3rem;
-  color: #334155;
-}
-.team-member span {
-  color: #0284c7;
 }
 
 /************************************************************
@@ -1139,14 +1111,11 @@ footer {
 }
 .map-card strong {
   margin-bottom: 0.5rem;
-  color: #334155;
 }
 .map-card p {
   margin: 0 0 0.75rem;
-  color: #64748b;
 }
 .map-card a {
-  color: #0284c7;
   text-decoration: none;
 }
 

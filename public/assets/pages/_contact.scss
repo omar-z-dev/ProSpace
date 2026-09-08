@@ -5,7 +5,13 @@
 .contact-hero {
   padding: 10rem 0;
   text-align: center;
-  background-color: #1e293b;
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(2, 132, 199, 0.1) 0%,
+      rgba(2, 132, 199, 0) 50%
+    ),
+    #1e293b;
 
   .contact-label {
     display: inline-flex;
@@ -15,7 +21,6 @@
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     background-color: rgba(14, 165, 233, 0.15);
-    color: #38bdf8;
     svg {
       width: 15px;
       height: 15px;
@@ -26,11 +31,6 @@
   h1 {
     margin-bottom: 0.75rem;
     color: white;
-  }
-
-  p {
-    line-height: 1.6;
-    color: #94a3b8;
   }
 }
 
@@ -71,10 +71,6 @@
   h2 {
     margin: 0;
   }
-
-  span {
-    color: #94a3b8;
-  }
 }
 
 .form-row {
@@ -90,7 +86,6 @@
 
   label {
     margin-bottom: 0.4rem;
-    color: #475569;
   }
 
   input,
@@ -122,7 +117,6 @@
   align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 1.5rem;
-  color: #64748b;
   input {
     margin-top: 0.2rem;
   }
@@ -153,8 +147,8 @@
 .contact-info-card {
   padding: 1.5rem;
   border-radius: 0.75rem;
-  background-color: #1e293b;
   color: white;
+  background-color: #0f172a;
 
   > h2 {
     margin: 0 0 0.3rem;
@@ -163,7 +157,6 @@
   > span {
     display: block;
     margin-bottom: 1.5rem;
-    color: #38bdf8;
   }
 }
 
@@ -208,14 +201,8 @@
   border-radius: 0.75rem;
   background-color: white;
 
-  strong {
-    color: #334155;
-  }
-
   p {
     margin: 0.3rem 0 0;
-    line-height: 1.5;
-    color: #64748b;
   }
 }
 
@@ -223,12 +210,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   flex-shrink: 0;
   border-radius: 50%;
   background-color: #e0f2fe;
-  color: #0284c7;
 }
 
 /************************************************************
@@ -243,17 +229,13 @@
 
   .stars {
     margin-bottom: 0.75rem;
-    color: #f59e0b;
-
     span {
       margin-left: 0.3rem;
-      color: #334155;
     }
   }
 
   p {
     margin-bottom: 0.75rem;
-    color: #64748b;
   }
 }
 
@@ -274,10 +256,6 @@
     max-width: 600px;
     margin: 0 auto 3rem;
   }
-}
-
-.team-label {
-  color: #0284c7;
 }
 
 /************************************************************
@@ -305,11 +283,6 @@
 
   h3 {
     margin: 0 0 0.3rem;
-    color: #334155;
-  }
-
-  span {
-    color: #0284c7;
   }
 }
 
@@ -368,16 +341,13 @@
 
   strong {
     margin-bottom: 0.5rem;
-    color: #334155;
   }
 
   p {
     margin: 0 0 0.75rem;
-    color: #64748b;
   }
 
   a {
-    color: #0284c7;
     text-decoration: none;
   }
 }
