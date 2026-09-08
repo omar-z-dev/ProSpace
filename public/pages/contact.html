@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Contact-ProSpace Solutions</title>
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/img/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -94,7 +113,10 @@
       <!-- CONTACT -->
       <section class="contact-section">
         <div class="container contact-layout">
-          <!-- FORMULAIRE -->
+
+        <!-- FORMULAIRE -->
+        <!-- FORMULAIRE -->
+        <!-- FORMULAIRE -->
           <div class="contact-form-container">
             <div class="contact-form-header">
               <h2 class="heading-secondary">Formulaire de contact</h2>
@@ -113,7 +135,9 @@
                     type="text"
                     id="nom"
                     placeholder="Marie Dupont"
+                     aria-describedby="erreur-nom"
                   />
+                  <p id="erreur-nom" class="error-message"></p>
                 </div>
 
                 <div class="form-group">
@@ -126,7 +150,9 @@
                     type="email"
                     id="email"
                     placeholder="m.dupont@entreprise.fr"
+                    aria-describedby="erreur-email"
                   />
+                  <p id="erreur-email" class="error-message"></p>
                 </div>
               </div>
 
@@ -142,7 +168,9 @@
                     type="text"
                     id="entreprise"
                     placeholder="Acme SAS"
+                    aria-describedby="erreur-entreprise"
                   />
+                  <p id="erreur-entreprise" class="error-message"></p>
                 </div>
 
                 <div class="form-group">
@@ -154,8 +182,7 @@
                     class="heading-tertiary"
                     type="tel"
                     id="telephone"
-                    placeholder="+33 6 12 34 56 78"
-                  />
+                    placeholder="+33 6 12 34 56 78">
                 </div>
               </div>
 
@@ -163,13 +190,16 @@
               <div class="form-group">
                 <label class="text-notation" for="sujet"> SUJET * </label>
 
-                <select id="sujet">
+                <select  id="type-demande"
+                        name="type-demande"
+                        aria-describedby="erreur-type">
                   <option value="">Sélectionnez un sujet...</option>
                   <option>Demande d'information</option>
                   <option>Demande de devis</option>
                   <option>Réclamation</option>
                   <option>Autre demande</option>
                 </select>
+                 <p id="erreur-type" class="error-message"></p>
               </div>
 
               <!-- MESSAGE -->
@@ -864,5 +894,7 @@
     </footer>
 
     <script src="../js/carroussel.js"></script>
+    <script src="../js/form.js"></script>
+
   </body>
 </html>
