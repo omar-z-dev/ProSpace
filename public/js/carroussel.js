@@ -1,4 +1,14 @@
-const track = document.querySelector(".team-list");
+/*=============================================================
+    CARROUSEL              
+
+Role : 
+
+--Afficher les cards en fonction des filtres
+
+================================================================*/
+
+//Recuperer la section html de ys les articles des membres d'equipe
+const ListAllMembers = document.querySelector(".team-list");
 const cards = document.querySelectorAll(".team-member");
 const dots = document.querySelectorAll(".carousel-dot");
 
@@ -16,9 +26,9 @@ function updateDots() {
 }
 
 nextButton.addEventListener("click", () => {
-  const firstCard = track.firstElementChild;
+  const firstCard = ListAllMembers.firstElementChild;
 
-  track.appendChild(firstCard);
+  ListAllMembers.appendChild(firstCard);
 
   currentIndex++;
 
@@ -30,9 +40,9 @@ nextButton.addEventListener("click", () => {
 });
 
 prevButton.addEventListener("click", () => {
-  const lastCard = track.lastElementChild;
+  const lastCard = ListAllMembers.lastElementChild;
 
-  track.prepend(lastCard);
+  ListAllMembers.prepend(lastCard);
 
   currentIndex--;
 
