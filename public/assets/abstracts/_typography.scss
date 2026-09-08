@@ -59,18 +59,21 @@
   font-weight: 700; //bold
 }
 
-.heading-secondary-logo-ft {
-  font-family: "Inter", sans-serif;
-  font-size: 0.875rem; //14px in logo header bold
-  font-weight: 700; //bold
-}
-
 .heading-hero-explain {
   font-family: "Inter", sans-serif;
   font-size: 1.125rem; //18px
   font-weight: 400; //regular
 }
-
+.text-primary {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem; //15px
+  font-weight: 600; //semibold
+}
+.heading-secondary-logo-ft {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem; //14px in logo header bold
+  font-weight: 700; //bold
+}
 .heading-tertiary {
   font-family: "Inter", sans-serif;
   font-size: 0.875rem; //14px
@@ -82,12 +85,6 @@
   font-weight: 500; //medium
 }
 
-.text-primary {
-  font-family: "Inter", sans-serif;
-  font-size: 0.9375rem; //15px
-  font-weight: 600; //semibold
-}
-
 .text-notation {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem; //12px
@@ -95,7 +92,13 @@
 }
 .text-hero-main {
   font-family: "Inter", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.75rem; //12px
+  font-weight: 700; // bold
+}
+.text-small {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem; //12PX
+  font-weight: 500; //medium
 }
 .text-xsmall {
   font-family: "Inter", sans-serif;

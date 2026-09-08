@@ -54,16 +54,22 @@
   font-weight: 700;
 }
 
-.heading-secondary-logo-ft {
-  font-family: "Inter", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 700;
-}
-
 .heading-hero-explain {
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
+}
+
+.text-primary {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.heading-secondary-logo-ft {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 
 .heading-tertiary {
@@ -78,12 +84,6 @@
   font-weight: 500;
 }
 
-.text-primary {
-  font-family: "Inter", sans-serif;
-  font-size: 0.9375rem;
-  font-weight: 600;
-}
-
 .text-notation {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
@@ -93,6 +93,13 @@
 .text-hero-main {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.text-small {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
 }
 
 .text-xsmall {
@@ -1040,19 +1047,19 @@ footer {
                         MEMBRES EQUIPE
 ************************************************************/
 .team-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  max-width: 850px;
-  margin: auto;
+  display: flex;
+  transition: transform 0.4s ease;
 }
 
 .team-member {
-  text-align: center;
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  align-items: center;
 }
 .team-member img {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 0.75rem;
   border-radius: 0.75rem;
   object-fit: cover;
@@ -1072,8 +1079,11 @@ footer {
   margin-top: 2rem;
 }
 .team-pagination button {
-  width: 25px;
-  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
   border: 1px solid #dce1e7;
   border-radius: 50%;
   background-color: white;
@@ -1109,8 +1119,8 @@ footer {
   border-radius: 0.75rem;
   background-color: #f8fafc;
 }
-.map-card strong {
-  margin-bottom: 0.5rem;
+.map-card span {
+  margin-bottom: 1rem;
 }
 .map-card p {
   margin: 0 0 0.75rem;
@@ -1128,6 +1138,13 @@ footer {
   margin-bottom: 1rem;
   border-radius: 50%;
   background-color: #e0f2fe;
+}
+
+.google-maps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
 }
 
 /************************************************************

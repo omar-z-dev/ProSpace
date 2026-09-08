@@ -1,0 +1,88 @@
+.team-carousel {
+  width: 100%;
+}
+
+.team-carousel-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.team-list {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.team-member {
+  width: 25%;
+  flex-shrink: 0;
+  text-align: center;
+
+  img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+
+  h3 {
+    margin: 1rem 0 0.4rem;
+  }
+
+  span {
+    color: #0284c7;
+  }
+}
+
+.team-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+
+  button {
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 50%;
+
+    background: white;
+    color: #64748b;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    &:hover {
+      border-color: #0284c7;
+      color: #0284c7;
+    }
+  }
+}
+
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #cbd5e1;
+
+  cursor: pointer;
+
+  &.active {
+    width: 24px;
+
+    border-radius: 1rem;
+
+    background: #0284c7;
+  }
+}
