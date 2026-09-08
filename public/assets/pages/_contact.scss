@@ -301,12 +301,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     border: 2px solid #dce1e7;
     border-radius: 50%;
     background-color: white;
     cursor: pointer;
+    &:hover {
+      background-color: #0284c7;
+      border-color: #0284c7;
+      svg {
+        path {
+          stroke: white;
+        }
+      }
+    }
   }
 
   .dot {
