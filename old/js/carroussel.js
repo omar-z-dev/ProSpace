@@ -52,18 +52,3 @@ prevButton.addEventListener("click", () => {
 
   updateDots();
 });
-
-// Mettre à jour le nombre de favoris
-function updateFavoriteCount() {
-  const favoris = JSON.parse(localStorage.getItem("favoris")) || [];
-
-  const favoriteCount = document.getElementById("favorite-count");
-
-  if (favoriteCount) {
-    favoriteCount.textContent = favoris.length;
-    favoriteCount.style.visibility =
-      favoris.length === 0 ? "hidden" : "visible";
-  }
-}
-
-updateFavoriteCount();
