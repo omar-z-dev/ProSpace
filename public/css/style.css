@@ -478,6 +478,10 @@ footer {
 }
 
 /*********************  SECTION CARDS   *************************/
+.cards-list-container {
+  background-color: #e2e8f0;
+}
+
 .cards-list {
   display: flex;
   flex-direction: column;
@@ -845,7 +849,7 @@ footer {
 ************************************************************/
 .contact-section {
   padding: 3rem 0;
-  background-color: #f8fafc;
+  background-color: #e2e8f0;
 }
 
 .contact-layout {
@@ -1216,6 +1220,10 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+main {
+  background-color: #e2e8f0;
+}
+
 .spaces {
   padding: 10rem 0;
 }

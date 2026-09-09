@@ -14,7 +14,7 @@ const form = document.getElementById("contact-form");
 const nom = document.getElementById("nom");
 const email = document.getElementById("email");
 const entreprise = document.getElementById("entreprise");
-const typeDemande = document.getElementById("type-demande");
+const typeDemande = document.getElementById("type");
 const message = document.getElementById("message");
 const rgpd = document.getElementById("rgpd");
 
@@ -57,10 +57,16 @@ function supprimerErreur(champ) {
 function validerNom() {
   if (nom.value.trim() === "") {
     afficherErreur(nom, "Le nom complet est obligatoire.");
+    // return false pour annuler l'envoi du formulaire
     return false;
   }
-
+  // nom doit contenir uniquement des lettres
+  if (!/^[a-zA-ZÀ-ÿ\s-]+$/.test(nom.value.trim())) {
+    afficherErreur(nom, "Le nom doit contenir uniquement des lettres.");
+    return false;
+  }
   supprimerErreur(nom);
+  // return true pour valider l'envoi du formulaire
   return true;
 }
 /*************** 
@@ -72,7 +78,7 @@ function validerEmail() {
     afficherErreur(email, "L'adresse e-mail est obligatoire.");
     return false;
   }
-
+  // validité de l'email checké par le navigateur
   if (!email.validity.valid) {
     afficherErreur(email, "Veuillez saisir une adresse e-mail valide.");
     return false;
@@ -135,7 +141,7 @@ function validerTypeDemande() {
   return true;
 }
 
-// Ajouter des listeners aux inputs
+// Ajouter des listeners aux inputs pour lancer automatiquement les fonction de validation
 nom.addEventListener("input", validerNom);
 email.addEventListener("input", validerEmail);
 entreprise.addEventListener("input", validerEntreprise);

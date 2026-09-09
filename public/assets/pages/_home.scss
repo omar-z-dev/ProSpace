@@ -105,13 +105,16 @@
   }
 }
 /*********************  SECTION CARDS   *************************/
-
+.cards-list-container {
+  background-color: #e2e8f0;
+}
 //div qui contient toutes les cards
 .cards-list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 4rem 0;
+
   //div de chaque card
   .cards {
     display: grid;
