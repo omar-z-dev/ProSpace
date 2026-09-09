@@ -2,7 +2,7 @@
 @use "../abstracts/variables" as *;
 
 header {
-  height: 80px;
+  height: 200px;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,15 +28,19 @@ header {
   height: 100%;
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  padding: 0;
+  gap: 2rem;
+  flex-direction: column;
+  padding: 1rem 0;
   .header-nav {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 10rem;
     ul {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 2rem;
+      gap: 1rem;
       li {
         a {
           text-decoration: none;
@@ -76,7 +80,6 @@ header {
   border-radius: 0.75rem;
   color: #cbd5e1;
   text-decoration: none;
-
   &:hover {
     color: white;
     background-color: #334155;
@@ -85,5 +88,31 @@ header {
   &.active {
     background-color: #334155;
     color: #38bdf8;
+  }
+}
+
+/*=========================================
+    MEDIA QUERIES
+=========================================*/
+
+@media (min-width: 600px) {
+  header {
+    height: 80px;
+  }
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    .header-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      ul {
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
   }
 }

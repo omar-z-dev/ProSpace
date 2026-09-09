@@ -2,7 +2,7 @@
 
 /*containers*/
 .container {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 .container-small {
@@ -12,4 +12,9 @@
 .container-xsmall {
   width: 50%;
   margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .container {
+    width: 70%;
+  }
 }

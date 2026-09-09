@@ -42,3 +42,21 @@ footer {
     padding-top: 2rem;
   }
 }
+
+/*========================================
+  RESPONSIVE
+========================================*/
+
+/* MEDIA QUERIES */
+/*=================================================*/
+
+@media (max-width: 600px) {
+  .footer-main .footer-top {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .footer-main .footer-bottom {
+    flex-direction: column;
+  }
+}
