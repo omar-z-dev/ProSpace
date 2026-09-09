@@ -916,7 +916,7 @@ footer {
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .checkbox-group input {
   margin-top: 0.2rem;
@@ -927,6 +927,7 @@ footer {
 ************************************************************/
 .contact-submit {
   width: 100%;
+  margin-top: 1rem;
 }
 
 /************************************************************
@@ -941,6 +942,19 @@ footer {
 /************************************************************
                         CONTACT INFO
 ************************************************************/
+.error-message {
+  color: #ef4444;
+  margin-top: 0.5rem;
+}
+
+.confirmation-message {
+  color: #10b981;
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
 .contact-info-card {
   padding: 1.5rem;
   border-radius: 0.75rem;

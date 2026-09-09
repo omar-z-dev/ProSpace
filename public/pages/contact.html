@@ -114,9 +114,9 @@
       <section class="contact-section">
         <div class="container contact-layout">
 
-        <!-- FORMULAIRE -->
-        <!-- FORMULAIRE -->
-        <!-- FORMULAIRE -->
+        <!----------------- FORMULAIRE ---------------------->
+        <!----------------- FORMULAIRE ---------------------->
+        
           <div class="contact-form-container">
             <div class="contact-form-header">
               <h2 class="heading-secondary">Formulaire de contact</h2>
@@ -137,7 +137,7 @@
                     placeholder="Marie Dupont"
                      aria-describedby="erreur-nom"
                   />
-                  <p id="erreur-nom" class="error-message"></p>
+                  <p id="erreur-nom" class="text-small error-message"></p>
                 </div>
 
                 <div class="form-group">
@@ -152,7 +152,7 @@
                     placeholder="m.dupont@entreprise.fr"
                     aria-describedby="erreur-email"
                   />
-                  <p id="erreur-email" class="error-message"></p>
+                  <p id="erreur-email" class="text-small error-message"></p>
                 </div>
               </div>
 
@@ -199,7 +199,7 @@
                   <option>Réclamation</option>
                   <option>Autre demande</option>
                 </select>
-                 <p id="erreur-type" class="error-message"></p>
+                 <p id="erreur-type" class="text-small error-message"></p>
               </div>
 
               <!-- MESSAGE -->
@@ -210,12 +210,14 @@
                   class="heading-tertiary"
                   id="message"
                   placeholder="Décrivez votre projet ou votre question..."
+                     aria-describedby="erreur-message"
                 ></textarea>
+                 <p id="erreur-message" class="text-small error-message"></p>
               </div>
 
               <!-- CHECKBOX -->
               <label class="checkbox-group">
-                <input type="checkbox" id="rgpd" />
+                <input type="checkbox" id="rgpd"  aria-describedby="erreur-rgpd" />
 
                 <span class="text-xsmall">
                   J'accepte que mes données personnelles soient traitées
@@ -226,11 +228,13 @@
                   de ProSpace Solutions.
                 </span>
               </label>
+              <p id="erreur-rgpd" class="text-small error-message"></p>
 
               <!-- BOUTON -->
               <button type="submit" class="btn-primary contact-submit">
                 Envoyer le message
               </button>
+              <p id="confirmation" class="confirmation-message" role="status"></p>
             </form>
           </div>
 
