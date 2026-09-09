@@ -1,5 +1,16 @@
+/*=================================================
+  FORMULAIRE
+
+  Role : 
+
+  -- Valider le formulaire de contact
+
+  =================================================*/
+
+// recup div de tous le fomulaire
 const form = document.getElementById("contact-form");
 
+//Recup les 6 inputs
 const nom = document.getElementById("nom");
 const email = document.getElementById("email");
 const entreprise = document.getElementById("entreprise");
@@ -7,27 +18,42 @@ const typeDemande = document.getElementById("type-demande");
 const message = document.getElementById("message");
 const rgpd = document.getElementById("rgpd");
 
+//recup bouton envoyer le message
 const confirmation = document.getElementById("confirmation");
 
-/*************** Affichage de l'erreur ***************/
+/********************************** 
+ * 
+       Affichage de l'erreur
+ 
+ **********************************/
 function afficherErreur(champ, message) {
-  const erreur = document.getElementById(
-    `erreur-${champ.id === "type-demande" ? "type" : champ.id}`,
-  );
+  //Role : Afficher l'erreur
+  const erreur = document.getElementById(`erreur-${champ.id}`);
 
+  //Affichage de l'erreur
   erreur.textContent = message;
+
+  //Indication lecteur d'ecran de l'erreur
   champ.setAttribute("aria-invalid", "true");
 }
-
+/********************************** 
+ * 
+       Supprimer  l'erreur
+ 
+ **********************************/
 function supprimerErreur(champ) {
-  const erreur = document.getElementById(
-    `erreur-${champ.id === "type-demande" ? "type" : champ.id}`,
-  );
+  const erreur = document.getElementById(`erreur-${champ.id}`);
 
+  //Suppression de l'erreur
   erreur.textContent = "";
+
+  //Indication lecteur d'ecran pas d'erreur
   champ.setAttribute("aria-invalid", "false");
 }
-/*************** NOM ***************/
+/**************** 
+       NOM 
+
+ ***************/
 function validerNom() {
   if (nom.value.trim() === "") {
     afficherErreur(nom, "Le nom complet est obligatoire.");
@@ -37,7 +63,10 @@ function validerNom() {
   supprimerErreur(nom);
   return true;
 }
-/*************** EMAIL ***************/
+/*************** 
+    EMAIL 
+ 
+ ***************/
 function validerEmail() {
   if (email.value.trim() === "") {
     afficherErreur(email, "L'adresse e-mail est obligatoire.");
@@ -52,7 +81,10 @@ function validerEmail() {
   supprimerErreur(email);
   return true;
 }
-/*************** ENTREPRISE ***************/
+/***************
+   ENTREPRISE
+ 
+ ***************/
 function validerEntreprise() {
   if (entreprise.value.trim() === "") {
     afficherErreur(entreprise, "L'entreprise est obligatoire.");
@@ -62,7 +94,10 @@ function validerEntreprise() {
   supprimerErreur(entreprise);
   return true;
 }
-/*************** MESSAGE ***************/
+/***************
+     MESSAGE
+ 
+ ***************/
 function validerMessage() {
   if (message.value.trim() === "") {
     afficherErreur(message, "Le message est obligatoire.");
@@ -72,20 +107,24 @@ function validerMessage() {
   supprimerErreur(message);
   return true;
 }
-/*************** RGPD ***************/
+/***************
+      RGPD
+ 
+ ***************/
 function validerRgpd() {
-  const erreur = document.getElementById("erreur-rgpd");
-
   if (!rgpd.checked) {
-    erreur.textContent = "Vous devez accepter les conditions.";
-    rgpd.setAttribute("aria-invalid", "true");
+    afficherErreur(rgpd, "Vous devez accepter les conditions.");
     return false;
   }
 
-  erreur.textContent = "";
-  rgpd.setAttribute("aria-invalid", "false");
+  supprimerErreur(rgpd);
   return true;
 }
+
+/******************
+  Type de demande
+ 
+*******************/
 function validerTypeDemande() {
   if (typeDemande.value === "") {
     afficherErreur(typeDemande, "Veuillez sélectionner un type de demande.");
@@ -95,6 +134,8 @@ function validerTypeDemande() {
   supprimerErreur(typeDemande);
   return true;
 }
+
+// Ajouter des listeners aux inputs
 nom.addEventListener("input", validerNom);
 email.addEventListener("input", validerEmail);
 entreprise.addEventListener("input", validerEntreprise);
