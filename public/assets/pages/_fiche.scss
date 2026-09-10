@@ -15,7 +15,9 @@
     }
   }
 
-  /*************************** TITRE ******************************/
+  /***************************** 
+           TITRE 
+  ******************************/
   .fiche-header {
     margin-bottom: 1.5rem;
     h1 {
@@ -45,7 +47,9 @@
     }
   }
 
-  /*************************** GALERIE ******************************/
+  /***************************** 
+              GALERIE 
+  ******************************/
   .fiche-gallery {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -71,7 +75,9 @@
     }
   }
 
-  /*************************** CONTENU ******************************/
+  /***************************** 
+            CONTENU 
+  ******************************/
   .fiche-body {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(18rem, 1fr);
@@ -79,7 +85,9 @@
     align-items: start;
   }
 
-  /*************************** DETAILS ******************************/
+  /***************************** 
+             DETAILS 
+  ******************************/
   .fiche-details {
     display: flex;
     flex-direction: column;
@@ -94,7 +102,10 @@
       line-height: 1.7;
     }
   }
-  /************************* EQUIPEMENTS ***************************/
+  /************************** 
+        EQUIPEMENTS 
+
+  ***************************/
   .equipments {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -110,7 +121,9 @@
     }
   }
 
-  /************************* CAPACITE ***************************/
+  /************************* 
+          CAPACITE 
+  ***************************/
   .capacity-box {
     padding: 1.25rem;
     border: 1px solid #b8d8e8;
@@ -130,7 +143,9 @@
     }
   }
 
-  /************************* TARIFS ***************************/
+  /************************* 
+            TARIFS 
+  ***************************/
   .pricing-card {
     padding: 1.5rem;
     border: 1px solid #dce1e7;
@@ -153,7 +168,10 @@
       padding-bottom: 1rem;
       border-bottom: 1px solid #dce1e7;
     }
-    /*********** btn ajouter aux favoris ****************/
+    /********************************* 
+        btn ajouter aux favoris 
+
+    **********************************/
 
     .favorite-btn {
       display: flex;
@@ -199,7 +217,10 @@
       }
     }
 
-    /********************* btn contacter *********************/
+    /********************* 
+        btn contacter 
+    
+    *********************/
 
     .contact-btn {
       display: block;

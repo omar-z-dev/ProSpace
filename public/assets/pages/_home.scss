@@ -1,4 +1,6 @@
-/******************* SECTION HERO ********************/
+/******************* 
+    SECTION HERO 
+********************/
 .hero {
   position: relative;
   min-height: 550px;
@@ -49,7 +51,9 @@
   }
 }
 
-/*******************  SECTION FILTERS   ********************/
+/***************************  
+    SECTION FILTERS   
+****************************/
 
 .filters {
   position: sticky;
@@ -104,7 +108,9 @@
     cursor: pointer;
   }
 }
-/*********************  SECTION CARDS   *************************/
+/************************  
+     SECTION CARDS   
+*************************/
 .cards-list-container {
   background-color: #e2e8f0;
 }
@@ -171,7 +177,10 @@
   }
 }
 
-/******************* FAVORIS (coeur en background rouge) ***************/
+/************************************************** 
+      FAVORIS (coeur en background rouge) 
+
+***************************************************/
 
 .favorite {
   position: absolute;
@@ -214,7 +223,10 @@
   }
 }
 
-/***************** ICONE nbre de personne fibre PMR ecran ***************/
+/******************************************************* 
+      ICONE nbre de personne fibre PMR ecran
+       
+*******************************************************/
 
 .features {
   display: flex;

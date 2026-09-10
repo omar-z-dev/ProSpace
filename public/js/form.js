@@ -56,7 +56,7 @@ function supprimerErreur(champ) {
  ***************/
 function validerNom() {
   if (nom.value.trim() === "") {
-    afficherErreur(nom, "Le nom complet est obligatoire.");
+    afficherErreur(nom, "Le nom est obligatoire.");
     // return false pour annuler l'envoi du formulaire
     return false;
   }
@@ -93,7 +93,7 @@ function validerEmail() {
  ***************/
 function validerEntreprise() {
   if (entreprise.value.trim() === "") {
-    afficherErreur(entreprise, "L'entreprise est obligatoire.");
+    afficherErreur(entreprise, "Le nom de l'entreprise est obligatoire.");
     return false;
   }
 
@@ -133,7 +133,7 @@ function validerRgpd() {
 *******************/
 function validerTypeDemande() {
   if (typeDemande.value === "") {
-    afficherErreur(typeDemande, "Veuillez sélectionner un type de demande.");
+    afficherErreur(typeDemande, "Veuillez sélectionner un sujet de demande.");
     return false;
   }
 
