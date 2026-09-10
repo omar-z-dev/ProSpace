@@ -423,7 +423,9 @@ footer {
   border: solid 1px #ef4444;
 }
 
-/******************* SECTION HERO ********************/
+/******************* 
+    SECTION HERO 
+********************/
 .hero {
   position: relative;
   min-height: 550px;
@@ -447,7 +449,9 @@ footer {
   border: solid 1px rgb(113, 134, 175);
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   background-color: rgb(33, 40, 59);
   margin-bottom: 1rem;
 }
@@ -469,7 +473,9 @@ footer {
   gap: 0.5rem;
 }
 
-/*******************  SECTION FILTERS   ********************/
+/***************************  
+    SECTION FILTERS   
+****************************/
 .filters {
   position: sticky;
   top: 80px;
@@ -524,7 +530,9 @@ footer {
   cursor: pointer;
 }
 
-/*********************  SECTION CARDS   *************************/
+/************************  
+     SECTION CARDS   
+*************************/
 .cards-list-container {
   background-color: #e2e8f0;
 }
@@ -583,7 +591,10 @@ footer {
   justify-content: space-between;
 }
 
-/******************* FAVORIS (coeur en background rouge) ***************/
+/************************************************** 
+      FAVORIS (coeur en background rouge) 
+
+***************************************************/
 .favorite {
   position: absolute;
   top: 10px;
@@ -620,7 +631,10 @@ footer {
   stroke: white;
 }
 
-/***************** ICONE nbre de personne fibre PMR ecran ***************/
+/******************************************************* 
+      ICONE nbre de personne fibre PMR ecran
+
+*******************************************************/
 .features {
   display: flex;
   flex-direction: row;
@@ -706,7 +720,9 @@ footer {
   color: #0470f4;
 }
 .fiche {
-  /*************************** TITRE ******************************/
+  /***************************** 
+           TITRE 
+  ******************************/
 }
 .fiche .fiche-header {
   margin-bottom: 1.5rem;
@@ -735,7 +751,9 @@ footer {
   gap: 0.5rem;
 }
 .fiche {
-  /*************************** GALERIE ******************************/
+  /***************************** 
+              GALERIE 
+  ******************************/
 }
 .fiche .fiche-gallery {
   display: grid;
@@ -760,7 +778,9 @@ footer {
   height: 25rem;
 }
 .fiche {
-  /*************************** CONTENU ******************************/
+  /***************************** 
+            CONTENU 
+  ******************************/
 }
 .fiche .fiche-body {
   display: grid;
@@ -769,7 +789,9 @@ footer {
   align-items: start;
 }
 .fiche {
-  /*************************** DETAILS ******************************/
+  /***************************** 
+             DETAILS 
+  ******************************/
 }
 .fiche .fiche-details {
   display: flex;
@@ -783,7 +805,10 @@ footer {
   line-height: 1.7;
 }
 .fiche {
-  /************************* EQUIPEMENTS ***************************/
+  /************************** 
+        EQUIPEMENTS 
+
+  ***************************/
 }
 .fiche .equipments {
   display: grid;
@@ -800,7 +825,9 @@ footer {
   background-color: #f8fafc;
 }
 .fiche {
-  /************************* CAPACITE ***************************/
+  /************************* 
+          CAPACITE 
+  ***************************/
 }
 .fiche .capacity-box {
   padding: 1.25rem;
@@ -820,7 +847,9 @@ footer {
   margin-bottom: 0.5rem;
 }
 .fiche {
-  /************************* TARIFS ***************************/
+  /************************* 
+            TARIFS 
+  ***************************/
 }
 .fiche .pricing-card {
   padding: 1.5rem;
@@ -846,7 +875,10 @@ footer {
   border-bottom: 1px solid #dce1e7;
 }
 .fiche .pricing-card {
-  /*********** btn ajouter aux favoris ****************/
+  /********************************* 
+      btn ajouter aux favoris 
+
+  **********************************/
 }
 .fiche .pricing-card .favorite-btn {
   display: flex;
@@ -886,7 +918,10 @@ footer {
   stroke: #ff637e;
 }
 .fiche .pricing-card {
-  /********************* btn contacter *********************/
+  /********************* 
+      btn contacter 
+
+  *********************/
 }
 .fiche .pricing-card .contact-btn {
   display: block;
@@ -1143,7 +1178,7 @@ footer {
 }
 
 /************************************************************
-                        MEMBRES EQUIPE
+                        MEMBRES EQUIPE (les articles)
 ************************************************************/
 .team-list {
   display: flex;
@@ -1154,7 +1189,6 @@ footer {
 
 .team-member {
   display: flex;
-  width: 25%;
   flex-direction: column;
   align-items: center;
   flex: 0 0 calc((100% - 6rem) / 4);

@@ -28,7 +28,10 @@
     border: solid 1px rgb(113, 134, 175);
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
     background-color: rgb(33, 40, 59);
     margin-bottom: 1rem;
   }
@@ -50,7 +53,6 @@
     }
   }
 }
-
 /***************************  
     SECTION FILTERS   
 ****************************/

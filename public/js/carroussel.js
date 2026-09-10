@@ -47,8 +47,10 @@ nextButton.addEventListener("click", () => {
   ListAllMembers.appendChild(firstCard);
 
   currentIndex++;
+  console.log("index next : ", currentIndex);
 
   //Si l'index actuel est superieur ou egale au nombre de cartes
+  //si on arrive a l index 7, au clic suivant, on revient au index 0
   if (currentIndex >= cards.length) {
     currentIndex = 0;
   }
@@ -71,10 +73,11 @@ prevButton.addEventListener("click", () => {
 
   currentIndex--;
 
+  //Si l'index actuel est inferieur a 0 retour au dernier index (7  dans ce cas)
   if (currentIndex < 0) {
     currentIndex = cards.length - 1;
   }
-
+  console.log("index prev : ", currentIndex);
   updateDots();
 });
 
