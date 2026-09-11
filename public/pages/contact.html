@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="description"
+      content="Contactez ProSpace Solutions pour toute demande d'information, de devis ou de réservation d'un espace professionnel."
+    />
     <title>Contact-ProSpace Solutions</title>
     <!-- Favicon -->
     <link
@@ -113,10 +116,9 @@
       <!-- CONTACT -->
       <section class="contact-section">
         <div class="container contact-layout">
+          <!----------------- FORMULAIRE ---------------------->
+          <!----------------- FORMULAIRE ---------------------->
 
-        <!----------------- FORMULAIRE ---------------------->
-        <!----------------- FORMULAIRE ---------------------->
-        
           <div class="contact-form-container">
             <div class="contact-form-header">
               <h2 class="heading-secondary">Formulaire de contact</h2>
@@ -135,7 +137,7 @@
                     type="text"
                     id="nom"
                     placeholder="Marie Dupont"
-                     aria-describedby="erreur-nom"
+                    aria-describedby="erreur-nom"
                   />
                   <p id="erreur-nom" class="text-small error-message"></p>
                 </div>
@@ -170,7 +172,10 @@
                     placeholder="Acme SAS"
                     aria-describedby="erreur-entreprise"
                   />
-                  <p id="erreur-entreprise" class="text-small error-message"></p>
+                  <p
+                    id="erreur-entreprise"
+                    class="text-small error-message"
+                  ></p>
                 </div>
 
                 <div class="form-group">
@@ -182,23 +187,23 @@
                     class="heading-tertiary"
                     type="tel"
                     id="telephone"
-                    placeholder="+33 6 12 34 56 78">
+                    placeholder="+33 6 12 34 56 78"
+                  />
                 </div>
               </div>
 
               <!-- SUJET -->
               <div class="form-group">
-                <label class="text-notation" for="sujet"> SUJET * </label>
+                <label class="text-notation" for="type"> SUJET * </label>
 
-                <select  id="type" name="type"
-                        aria-describedby="erreur-type">
+                <select id="type" name="type" aria-describedby="erreur-type">
                   <option value="">Sélectionnez un sujet...</option>
                   <option>Demande d'information</option>
                   <option>Demande de devis</option>
                   <option>Réclamation</option>
                   <option>Autre demande</option>
                 </select>
-                 <p id="erreur-type" class="text-small error-message"></p>
+                <p id="erreur-type" class="text-small error-message"></p>
               </div>
 
               <!-- MESSAGE -->
@@ -209,14 +214,18 @@
                   class="heading-tertiary"
                   id="message"
                   placeholder="Décrivez votre projet ou votre question..."
-                     aria-describedby="erreur-message"
+                  aria-describedby="erreur-message"
                 ></textarea>
-                 <p id="erreur-message" class="text-small error-message"></p>
+                <p id="erreur-message" class="text-small error-message"></p>
               </div>
 
               <!-- CHECKBOX -->
               <label class="checkbox-group">
-                <input type="checkbox" id="rgpd"  aria-describedby="erreur-rgpd" />
+                <input
+                  type="checkbox"
+                  id="rgpd"
+                  aria-describedby="erreur-rgpd"
+                />
 
                 <span class="text-xsmall">
                   J'accepte que mes données personnelles soient traitées
@@ -233,7 +242,11 @@
               <button type="submit" class="btn-primary contact-submit">
                 Envoyer le message
               </button>
-              <p id="confirmation" class="confirmation-message" role="status"></p>
+              <p
+                id="confirmation"
+                class="confirmation-message"
+                role="status"
+              ></p>
             </form>
           </div>
 
@@ -256,7 +269,7 @@
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <g clip-path="url(#clip0_1_1465)">
+                    <g clip-path="url(#clip0_1_14651)">
                       <path
                         d="M6.82562 11.8078C7.83312 10.9379 10.8334 8.12119 10.8334 5.41665C10.8334 4.26737 10.3769 3.16517 9.56421 2.35252C8.75155 1.53986 7.64935 1.08331 6.50008 1.08331C5.35081 1.08331 4.24861 1.53986 3.43595 2.35252C2.62329 3.16517 2.16675 4.26737 2.16675 5.41665C2.16675 8.12119 5.16704 10.9379 6.17454 11.8078C6.2684 11.8783 6.38265 11.9165 6.50008 11.9165C6.61751 11.9165 6.73177 11.8783 6.82562 11.8078Z"
                         stroke="#0284C7"
@@ -273,7 +286,7 @@
                       />
                     </g>
                     <defs>
-                      <clipPath id="clip0_1_1465">
+                      <clipPath id="clip0_1_14652">
                         <rect width="13" height="13" fill="white" />
                       </clipPath>
                     </defs>
@@ -448,7 +461,8 @@
                 </span>
 
                 <p class="color-main text-xsmall">
-                  Notre équipe s'engage à vous répondre sous 2 heures ouvrées. Pour les urgences, appelez le +33 1 42 56 78 90.
+                  Notre équipe s'engage à vous répondre sous 2 heures ouvrées.
+                  Pour les urgences, appelez le +33 1 42 56 78 90.
                 </p>
               </div>
             </div>
@@ -461,7 +475,9 @@
               </div>
 
               <p class="color-main text-xsmall">
-                "L'équipe ProSpace est réactive et à l'écoute. Notre réservation a été confirmée en moins d'une heure, parfait pour notre séminaire de dernière minute."
+                "L'équipe ProSpace est réactive et à l'écoute. Notre réservation
+                a été confirmée en moins d'une heure, parfait pour notre
+                séminaire de dernière minute."
               </p>
 
               <span class="text-xsmall">
@@ -486,124 +502,127 @@
             vos projets d'espaces de travail.
           </p>
 
-        <!-- CARROUSSEL DES MEMBRES -->
-        <!-- CARROUSSEL DES MEMBRES -->
+          <!-- CARROUSSEL DES MEMBRES -->
+          <!-- CARROUSSEL DES MEMBRES -->
 
-        <div class="team-carousel-window">
-          <div class="team-list">
-            <!--member 1-->
-            <article class="team-member">
-              <img
-                src="../assets/img/equipe-experts/Alexandre-Moreau.png"
-                alt="Alexandre Moreau"
-              />
+          <div class="team-carousel-window">
+            <div class="team-list">
+              <!--member 1-->
+              <article class="team-member">
+                <img
+                  src="../assets/img/equipe-experts/Alexandre-Moreau.png"
+                  alt="Alexandre Moreau"
+                />
 
-              <h3 class="heading-secondary-logo-ft">Alexandre Moreau</h3>
+                <h3 class="heading-secondary-logo-ft">Alexandre Moreau</h3>
 
-              <span class="color-price-space text-small">
-                CEO & Co-fondateur
-              </span>
-            </article>
-            <!--member 2-->
-            <article class="team-member">
-              <img
-                src="../assets/img/equipe-experts/Sophie-Leclerc.png"
-                alt="Sophie Leclerc"
-              />
+                <span class="color-price-space text-small">
+                  CEO & Co-fondateur
+                </span>
+              </article>
+              <!--member 2-->
+              <article class="team-member">
+                <img
+                  src="../assets/img/equipe-experts/Sophie-Leclerc.png"
+                  alt="Sophie Leclerc"
+                />
 
-              <h3 class="heading-secondary-logo-ft">Sophie Leclerc</h3>
+                <h3 class="heading-secondary-logo-ft">Sophie Leclerc</h3>
 
-              <span class="color-price-space text-small">
-                Directrice Commerciale
-              </span>
-            </article>
-            <!--member 3-->
-            <article class="team-member">
-              <img
-                src="../assets/img/equipe-experts/Thomas-Bergeron.png"
-                alt="Thomas Berger"
-              />
+                <span class="color-price-space text-small">
+                  Directrice Commerciale
+                </span>
+              </article>
+              <!--member 3-->
+              <article class="team-member">
+                <img
+                  src="../assets/img/equipe-experts/Thomas-Bergeron.png"
+                  alt="Thomas Berger"
+                />
 
-              <h3 class="heading-secondary-logo-ft">Thomas Berger</h3>
+                <h3 class="heading-secondary-logo-ft">Thomas Berger</h3>
 
-              <span class="color-price-space text-small">
-                Responsable Partenariats
-              </span>
-            </article>
-            <!--member 4-->
-            <article class="team-member">
-              <img
-                src="../assets/img/equipe-experts/Marine-Dubois.png"
-                alt="Marine Dubois"
-              />
+                <span class="color-price-space text-small">
+                  Responsable Partenariats
+                </span>
+              </article>
+              <!--member 4-->
+              <article class="team-member">
+                <img
+                  src="../assets/img/equipe-experts/Marine-Dubois.png"
+                  alt="Marine Dubois"
+                />
 
-              <h3 class="heading-secondary-logo-ft">Marine Dubois</h3>
+                <h3 class="heading-secondary-logo-ft">Marine Dubois</h3>
 
-              <span class="color-price-space text-small">
-                Chargée de Clientèle Senior
-              </span>
-            </article>
+                <span class="color-price-space text-small">
+                  Chargée de Clientèle Senior
+                </span>
+              </article>
 
-            <!--member 5-->
-            <article class="team-member">
-              <img
-                src="../assets/img/cards/confluence3.png"
-                alt="Marine Dubois"
-              />
+              <!--member 5-->
+              <article class="team-member">
+                <img
+                  src="../assets/img/cards/confluence3.png"
+                  alt="Marine Dubois"
+                />
 
-              <h3 class="heading-secondary-logo-ft">Julien Fontaine</h3>
+                <h3 class="heading-secondary-logo-ft">Julien Fontaine</h3>
 
-              <span class="color-price-space text-small">
-                Directeur Technique
-              </span>
-            </article>
-            <!--member 6-->
-            <article class="team-member">
-              <img
-                src="../assets/img/equipe-experts/Marine-Dubois.png"
-                alt="Marine Dubois"
-              />
+                <span class="color-price-space text-small">
+                  Directeur Technique
+                </span>
+              </article>
+              <!--member 6-->
+              <article class="team-member">
+                <img
+                  src="../assets/img/equipe-experts/Marine-Dubois.png"
+                  alt="Marine Dubois"
+                />
 
-              <h3 class="heading-secondary-logo-ft">Camille Roux</h3>
+                <h3 class="heading-secondary-logo-ft">Camille Roux</h3>
 
-              <span class="color-price-space text-small">
-                Responsable Marketing
-              </span>
-            </article>
-            <!--member 7-->
-            <article class="team-member">
-              <img
-                src="../assets/img/cards/espace-wagram-opera.png"
-                alt="Marine Dubois"
-              />
+                <span class="color-price-space text-small">
+                  Responsable Marketing
+                </span>
+              </article>
+              <!--member 7-->
+              <article class="team-member">
+                <img
+                  src="../assets/img/cards/espace-wagram-opera.png"
+                  alt="Marine Dubois"
+                />
 
-              <h3 class="heading-secondary-logo-ft">Élodie Garnier</h3>
+                <h3 class="heading-secondary-logo-ft">Élodie Garnier</h3>
 
-              <span class="color-price-space text-small">
-                Responsable Marketing
-              </span>
-            </article>
-            <!--member 8-->
-            <article class="team-member">
-              <img
-                src="../assets/img/equipe-experts/Thomas-Bergeron.png"
-                alt="Marine Dubois"
-              />
+                <span class="color-price-space text-small">
+                  Responsable Marketing
+                </span>
+              </article>
+              <!--member 8-->
+              <article class="team-member">
+                <img
+                  src="../assets/img/equipe-experts/Thomas-Bergeron.png"
+                  alt="Marine Dubois"
+                />
 
-              <h3 class="heading-secondary-logo-ft">Nicolas Vidal</h3>
+                <h3 class="heading-secondary-logo-ft">Nicolas Vidal</h3>
 
-              <span class="color-price-space text-small">
-                Responsable Marketing
-              </span>
+                <span class="color-price-space text-small">
+                  Responsable Marketing
+                </span>
+              </article>
+            </div>
           </div>
-        </div>
 
           <!-- PAGINATION -->
-        <div class="team-pagination">
-
+          <div class="team-pagination">
             <!-- Bouton précédent -->
-            <button type="button"class="carousel-prev"
-            aria-label="Article précédent">
+            <button
+              type="button"
+              class="carousel-prev"
+              aria-label="Article précédent"
+            >
               <svg
                 width="18"
                 height="18"
@@ -622,19 +641,22 @@
             </button>
 
             <div class="carousel-dots">
-                <span class="dot carousel-dot active"></span>
-                <span class="dot carousel-dot"></span>
-                <span class="dot carousel-dot"></span>
-                <span class="dot carousel-dot"></span>
-                <span class="dot carousel-dot"></span>
-                <span class="dot carousel-dot"></span>
-                <span class="dot carousel-dot"></span>
-                <span class="dot carousel-dot"></span>
+              <span class="dot carousel-dot active"></span>
+              <span class="dot carousel-dot"></span>
+              <span class="dot carousel-dot"></span>
+              <span class="dot carousel-dot"></span>
+              <span class="dot carousel-dot"></span>
+              <span class="dot carousel-dot"></span>
+              <span class="dot carousel-dot"></span>
+              <span class="dot carousel-dot"></span>
             </div>
 
             <!-- Bouton suivant -->
-            <button type="button" class="carousel-next"
-            aria-label="Article suivant">
+            <button
+              type="button"
+              class="carousel-next"
+              aria-label="Article suivant"
+            >
               <svg
                 width="18"
                 height="18"
@@ -651,8 +673,8 @@
                 />
               </svg>
             </button>
+          </div>
         </div>
-
       </section>
 
       <!-- ADRESSE / MAP -->
@@ -667,7 +689,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_1_1465)">
+                <g clip-path="url(#clip0_1_14653)">
                   <path
                     d="M6.82562 11.8078C7.83312 10.9379 10.8334 8.12119 10.8334 5.41665C10.8334 4.26737 10.3769 3.16517 9.56421 2.35252C8.75155 1.53986 7.64935 1.08331 6.50008 1.08331C5.35081 1.08331 4.24861 1.53986 3.43595 2.35252C2.62329 3.16517 2.16675 4.26737 2.16675 5.41665C2.16675 8.12119 5.16704 10.9379 6.17454 11.8078C6.2684 11.8783 6.38265 11.9165 6.50008 11.9165C6.61751 11.9165 6.73177 11.8783 6.82562 11.8078Z"
                     stroke="#0284C7"
@@ -698,9 +720,13 @@
             <p class="color-avis text-xsmall">
               Siège social · Ligne 2 & 6 — Wagram · RER C — Invalides
             </p>
-            
+
             <!-- Lien vers Google Maps -->
-            <a class="text-notation color-price-space google-maps"   href="https://www.google.fr/maps/place/14+Av.+de+Wagram,+75008+Paris/@48.8765383,2.2942633,1049m/data=!3m2!1e3!5s0x47e66feb14a66fe3:0xa6d213ae4f9c09b6!4m6!3m5!1s0x47e66feb6b3b6c5f:0xb245fb510ca68780!8m2!3d48.8758613!4d2.2968347!16s%2Fg%2F11m6nj46gq?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            <a
+              class="text-notation color-price-space google-maps"
+              href="https://www.google.fr/maps/place/14+Av.+de+Wagram,+75008+Paris/@48.8765383,2.2942633,1049m/data=!3m2!1e3!5s0x47e66feb14a66fe3:0xa6d213ae4f9c09b6!4m6!3m5!1s0x47e66feb6b3b6c5f:0xb245fb510ca68780!8m2!3d48.8758613!4d2.2968347!16s%2Fg%2F11m6nj46gq?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+            >
               <svg
                 width="18"
                 height="18"
@@ -897,6 +923,5 @@
 
     <script src="../js/carroussel.js"></script>
     <script src="../js/form.js"></script>
-
   </body>
 </html>
