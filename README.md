@@ -20,8 +20,11 @@ ProSpace/
 │ │ └──
 │ │
 │ ├── js/
-│ │ ├── favoris.js
+│ │ ├── carroussel.js
 │ │ ├── filtres.js
+│ │ └── favoris.js
+│ │ └── voir-fiche.js
+│ │ └── form.js
 │ │ └── espaces.js
 │ │
 │ ├── pages/
@@ -87,8 +90,7 @@ Documentation de l'API et du paramétrage URLSearchParams
 API :
 
 ProSpace utilise une API pour récupérer certaines données nécessaires au fonctionnement du site.
-Une API permet à l'application de communiquer avec une autre source de données en utilisant des requêtes HTTP , dans mon cas les donnees sont stock" dans le dossier data.
-Les données sont récupérées au format JSON.
+Une API permet à l'application de communiquer avec une autre source de données en utilisant des requêtes HTTP , dans mon cas les donnees sont stockés dans le dossier data.
 
 Fonctionnement :
 
