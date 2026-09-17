@@ -90,14 +90,14 @@ Documentation de l'API et du paramétrage URLSearchParams
 API :
 
 ProSpace utilise une API pour récupérer certaines données nécessaires au fonctionnement du site.
-Une API permet à l'application de communiquer avec une autre source de données en utilisant des requêtes HTTP , dans mon cas les donnees sont stockés dans le dossier data.
+Une API permet à l'application de communiquer avec une autre source de données en utilisant des requêtes HTTP , dans mon cas les donnees sont stockés dans le dossier data (espaces.json).
 
 Fonctionnement :
 
 Le JavaScript effectue une requête vers l'API.
 Les données reçues sont ensuite converties depuis le format JSON afin de pouvoir être utilisées dans l'application.
 
-/================================/
+/==================================/
 
 Paramétrage avec URLSearchParams :
 
